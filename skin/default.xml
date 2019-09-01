@@ -1,0 +1,2106 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<skin version="0.3">
+
+  <!-- insets: top left bottom right -->
+  <image id="iconfile1" file="base:data/icons/document.png" resizeToLogicalW="24" resizeToLogicalH="24"/>
+  <image id="iconfolder1" file="base:data/icons/Folder.png" resizeToLogicalW="24" resizeToLogicalH="24"/>
+
+  <image id="selectionbitmap" file="selection.png"/>
+  <image id="selectionbitmap_nf" file="selection.png" saturation="90"/>
+  <image id="splitterPattern" file="splitterpattern_large.png" resizeToLogicalW="4" resizeToLogicalH="4"/>
+
+  <image id="messageDialogIconWarning" file="messagebox_warning.png"/>
+  <image id="messageDialogIconInfo" file="messagebox_info.png"/>
+  <image id="messageDialogIconError" file="messagebox_critical.png"/>
+  <image id="messageDialogIconQuestion" file="messagebox_info.png"/>
+
+  <image id="scrollRibbonBitmap" file="scroll_ribbon.png" resizeToLogicalW="8" resizeToLogicalH="8"/>
+  <image id="scrollRibbonHorzBitmap" file="scroll_ribbon_horz.png" resizeToLogicalW="8" resizeToLogicalH="8"/>
+
+  <image id="resizeButtonBitmap" file="resize_button.png" resizeToLogicalW="16" resizeToLogicalH="16"/>
+  <image id="checkEnabledBitmap" file="check_enabled.png" resizeToLogicalW="10" resizeToLogicalH="10"/>
+  <image id="checkDisabledBitmap" file="check_disabled.png" resizeToLogicalW="10" resizeToLogicalH="10"/>
+  <image id="checkSelectedBitmap" file="check_selected.png" resizeToLogicalW="10" resizeToLogicalH="10"/>
+
+  <image id="arrowDownBitmap" file="arrow_down.png" resizeToLogicalW="11" resizeToLogicalH="11"/>
+  <image id="arrowDownDisabledBitmap" file="arrow_down_disabled.png" resizeToLogicalW="11" resizeToLogicalH="11"/>
+  <image id="arrowUpBitmap" file="arrow_up.png" resizeToLogicalW="11" resizeToLogicalH="11"/>
+  <image id="arrowLeftBitmap" file="arrow_left.png" resizeToLogicalW="11" resizeToLogicalH="11"/>
+  <image id="arrowRightBitmap" file="arrow_right.png" resizeToLogicalW="11" resizeToLogicalH="11"/>
+
+  <image id="subMenuArrowRightBitmap" file="arrow_right.png" resizeToLogicalW="9" resizeToLogicalH="9"/>
+  <image id="subMenuArrowRightWhiteBitmap" file="arrow_right_white.png" resizeToLogicalW="9" resizeToLogicalH="9"/>
+  <image id="subMenuArrowRightGrayBitmap" file="arrow_right_disabled.png" resizeToLogicalW="9" resizeToLogicalH="9"/>
+
+  <image id="arrowUpSmallBitmap" file="arrow_up.png" resizeToLogicalW="7" resizeToLogicalH="7"/>
+  <image id="arrowDownSmallBitmap" file="arrow_down.png" resizeToLogicalW="7" resizeToLogicalH="7"/>
+
+  <image id="arrowUpDisabledSmallBitmap" file="arrow_up_disabled.png" resizeToLogicalW="7" resizeToLogicalH="7"/>
+  <image id="arrowDownDisabledSmallBitmap" file="arrow_down_disabled.png" resizeToLogicalW="7" resizeToLogicalH="7"/>
+
+  <image id="closeButtonBitmap" file="close_button.png" resizeToLogicalW="15" resizeToLogicalH="15"/>
+  <image id="closeButtonMouseOverBitmap" file="close_button_mouseover.png" resizeToLogicalW="15" resizeToLogicalH="15"/>
+
+  <image id="treeButtonRightBitmap" file="tree_button.png" resizeToLogicalW="13" resizeToLogicalH="13"/>
+  <image id="treeButtonDownBitmap" file="tree_button_down.png" resizeToLogicalW="13" resizeToLogicalH="13"/>
+
+  <image id="linkArrowBitmap" file="link_arrow.png" resizeToLogicalW="16" resizeToLogicalH="16"/>
+
+  <!--
+  <font id="standard" file="Tahoma_13pix_8pt.nlfont"/>
+  <font id="button" file="Microsoft Sans Serif_13pix_8pt.nlfont"/>
+  <font id="title" file="Tahoma_13pix_8pt_bold.nlfont"/>
+  <font id="larger" file="Tahoma_13pix_8pt_bold.nlfont"/>
+  -->
+
+  <font id="standard" file="base:data/experimental/fonts/DejaVuSans.ttf" pixelsize="11" antialiasing="true"/>
+  <font id="button" file="base:data/experimental/fonts/DejaVuSans.ttf" pixelsize="11" antialiasing="true"/>
+  <font id="title" file="base:data/experimental/fonts/DejaVuSans-Bold.ttf" pixelsize="12" antialiasing="true"/>
+  <font id="larger" file="base:data/experimental/fonts/DejaVuSans.ttf" pixelsize="12" antialiasing="true"/>
+  <font id="message" file="base:data/experimental/fonts/DejaVuSans-Bold.ttf" pixelsize="18" antialiasing="true"/>
+
+  <font id="nolimitsindustries" file="base:data/experimental/fonts/CREAMPUF.TTF" pixelsize="14" antialiasing="true"/>
+  <font id="ridelabel" file="base:data/experimental/fonts/embosst3.ttf" pixelsize="16" antialiasing="true"/>
+  <font id="cplabel" file="base:data/experimental/fonts/embosst3.ttf" pixelsize="8" antialiasing="true"/>
+  <font id="cplabellarger" file="base:data/experimental/fonts/embosst3.ttf" pixelsize="10" antialiasing="true"/>
+
+  <color id="background" value="#23262a"/>
+  <color id="disabledBackground" value="#23262a"/>
+  <color id="border3dhigh" value="#39424c"/>
+  <color id="border3dmid" value="#8a8e93"/>
+  <color id="border3dlow" value="#39424c"/>
+  <color id="border3dlowest" value="#23262a"/>
+  <color id="selectioncolor" value="#415e86"/>
+  <color id="inactiveselectioncolor" value="#b1c4ddFF"/>
+  <color id="focusColor" value="#5E93FDC0"/>
+  <color id="scrollbarBackground1" value="#23262a"/>
+
+  <color id="textColor" value="#cdd3da"/>
+  <color id="disabledTextColor" value="#6c7478"/>
+
+  <color id="controlBorderColor" value="#39424c"/>
+  <color id="controlGradientUpPressed" value="#415e86"/>
+  <color id="controlGradientDownPressed" value="#415e86"/>
+  <color id="controlGradientUp" value="#39424c"/>
+  <color id="controlGradientDown" value="#39424c"/>
+
+  <color id="mouseOverButtonColorTop" value="#39424c"/>
+  <color id="mouseOverButtonColorBottom" value="#39424c"/>
+  <color id="pressedColor" value="#415e86"/>
+
+  <color id="gradient1" value="#39424c"/>
+  <color id="gradient2" value="#39424c"/>
+  <color id="gradient3" value="#39424c"/>
+  <color id="gradient4" value="#39424c"/>
+
+  <color id="gradientsel1" value="#39424c"/>
+  <color id="gradientsel2" value="#39424c"/>
+  <color id="gradientsel3" value="#39424c"/>
+  <color id="gradientsel4" value="#39424c"/>
+
+  <color id="gradientpressed1" value="#c0c0c0ff"/>
+  <color id="gradientpressed2" value="#808080ff"/>
+  <color id="gradientpressed3" value="#909090ff"/>
+  <color id="gradientpressed4" value="#c0c0c0ff"/>
+
+  <color id="treeViewLineColor" value="#000000"/>
+
+  <element name="window">
+    <style>
+      <property name="updateTitleOnActivationChange" value="true" type="bool"/>
+      <property name="clientBorder" value="20 1 1 1" type="insets"/>
+      <property name="minVisibleBorder" value="20 20 20 40" type="insets"/>
+
+      <property name="resizeButtonOriginX" value="right" type="string"/>
+      <property name="resizeButtonOriginY" value="bottom" type="string"/>
+      <property name="resizeButtonRect" value="-18 -18 17 17" type="rect"/>
+
+      <property name="moveButtonRect" value="1 1 19 18" type="rect"/>
+
+      <property name="closeButtonOriginX" value="right" type="string"/>
+      <property name="closeButtonOriginY" value="top" type="string"/>
+      <property name="closeButtonRect" value="-18 1 17 18" type="rect"/>
+
+      <property name="shadowRange" value="14" type="int"/>
+      <property name="shadowOffset" value="5 5" type="point"/>
+
+      <if state="DISABLED">
+        <set saturation="70"/>
+      </if>
+      <if state="ENABLED">
+        <set saturation="230"/>
+      </if>
+
+      <set gradient1color="#39424c"/>
+      <set gradient2color="#39424c"/>
+      <set gradient3color="#39424c"/>
+      <set gradient4color="#39424c"/>
+      <if state="LINEARBLENDING">
+        <set gradient1color="#39424c"/>
+        <set gradient2color="#39424c"/>
+        <set gradient3color="#39424c"/>
+        <set gradient4color="#39424c"/>
+      </if>
+
+      <gradientrect x1="0" y1="0" x2="WIDTH" y2="3"/>
+      <set fillstyle="gradient"/>
+
+      <clip x1="0" y1="0" x2="WIDTH" y2="10">
+        <fillrectrounded x1="0" y1="0" x2="WIDTH" y2="30" r="4"/>
+      </clip>
+
+      <set gradient1color="#258BFEcc"/>
+      <set gradient2color="#258BFEcc"/>
+      <set gradient3color="#1783FEcc"/>
+      <set gradient4color="#1783FEcc"/>
+      <if state="LINEARBLENDING">
+        <set gradient1color="#39424c"/>
+        <set gradient2color="#39424c"/>
+        <set gradient3color="#39424c"/>
+        <set gradient4color="#39424c"/>
+      </if>
+
+      <gradientrect x1="0" y1="10" x2="WIDTH" y2="20"/>
+
+      <if state="DISABLED">
+        <set saturation="255"/>
+      </if>
+
+      <fillrect x1="0" y1="10" x2="WIDTH" y2="20"/>
+
+      <set fillstyle="solid"/>
+
+      <clip x1="0" y1="20" x2="WIDTH" y2="HEIGHT">
+        <set color="background"/>
+        <fillrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT" r="4"/>
+      </clip>
+
+      <set fontid="title"/>
+      <clip x1="5" y1="0" x2="WIDTH-8" y2="HEIGHT+5">
+        <set color="#FFFFFFFF"/>
+        <printtext x="10" y="2" property="title" halign="left" valign="top"/>
+      </clip>
+    </style>
+  </element>
+
+  <element name="windowPopupMenu">
+    <style>
+      <property name="minVisibleBorder" value="20 20 20 40" type="insets"/>
+
+      <property name="resizeButtonOriginX" value="right" type="string"/>
+      <property name="resizeButtonOriginY" value="bottom" type="string"/>
+      <property name="resizeButtonRect" value="-16 -16 16 16" type="rect"/>
+
+      <property name="closeButtonOriginX" value="right" type="string"/>
+      <property name="closeButtonOriginY" value="top" type="string"/>
+      <property name="closeButtonRect" value="-18 1 17 18" type="rect"/>
+
+      <property name="shadowRange" value="7" type="int"/>
+      <property name="shadowOffset" value="4 4" type="point"/>
+
+      <set color="background"/>
+      <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT" r="4LS"/>
+
+      <set color="background"/>
+      <fillrectrounded x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT-1LS" r="3LS"/>
+
+    </style>
+  </element>
+
+  <element name="windowMenuBar">
+    <style>
+      <property name="minVisibleBorder" value="20 20 20 40" type="insets"/>
+
+      <property name="resizeButtonOriginX" value="right" type="string"/>
+      <property name="resizeButtonOriginY" value="bottom" type="string"/>
+      <property name="resizeButtonRect" value="-16 -16 16 16" type="rect"/>
+
+      <property name="closeButtonOriginX" value="right" type="string"/>
+      <property name="closeButtonOriginY" value="top" type="string"/>
+      <property name="closeButtonRect" value="-18 1 17 18" type="rect"/>
+
+      <property name="shadowRange" value="7" type="int"/>
+      <property name="shadowOffset" value="4 4" type="point"/>
+
+      <clip x1="0" y1="5LS" x2="WIDTH" y2="HEIGHT">
+        <set color="#39424c"/>
+        <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT" r="4LS"/>
+
+        <set color="#39424c"/>
+        <fillrectrounded x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT-1LS" r="3LS"/>
+      </clip>
+      <clip x1="0" y1="0" x2="WIDTH" y2="5LS">
+        <set color="#39424c"/>
+        <drawrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+        <set color="#39424c"/>
+        <fillrect x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT-1LS"/>
+      </clip>
+
+    </style>
+  </element>
+
+  <element name="windowNoBorder">
+    <style>
+      <property name="minVisibleBorder" value="20 20 20 40" type="insets"/>
+
+      <property name="resizeButtonOriginX" value="right" type="string"/>
+      <property name="resizeButtonOriginY" value="bottom" type="string"/>
+      <property name="resizeButtonRect" value="-16 -16 16 16" type="rect"/>
+
+      <property name="closeButtonOriginX" value="right" type="string"/>
+      <property name="closeButtonOriginY" value="top" type="string"/>
+      <property name="closeButtonRect" value="-18 1 17 18" type="rect"/>
+
+      <property name="shadowRange" value="7" type="int"/>
+      <property name="shadowOffset" value="4 4" type="point"/>
+
+      <set color="background"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="windowTooltip">
+    <style>
+      <property name="font" value="standard" type="fontid"/>
+
+      <property name="shadowRange" value="6" type="int"/>
+      <property name="shadowOffset" value="3 3" type="point"/>
+
+      <property name="tooltipInsets" value="2 4 3 4" type="insets"/>
+
+      <gradientrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      <set fillstyle="gradient"/>
+
+      <set gradient1color="#39424c"/>
+      <set gradient2color="#39424c"/>
+      <set gradient3color="#39424c"/>
+      <set gradient4color="#39424c"/>
+
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+      <set gradient1color="#39424c"/>
+      <set gradient2color="#39424c"/>
+      <set gradient3color="#39424c"/>
+      <set gradient4color="#39424c"/>
+
+      <fillrect x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT-1LS"/>
+
+      <set fillstyle="solid"/>
+
+      <set color="#cdd3da"/>
+      <set fontid="standard"/>
+      <printtext x="4" y="3" property="title" halign="left" valign="top"/>
+    </style>
+  </element>
+
+  <element name="windowResizeButton">
+    <style>
+      <set imageid="resizeButtonBitmap"/>
+      <set drawmode="alphablend"/>
+      <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="0" dy="0" dw="16" dh="16"/>
+
+      <if state="FOCUSED">
+        <set color="focusColor"/>
+        <set drawmode="alphablend"/>
+        <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT" r="2LS"/>
+        <set drawmode="replace"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="windowCloseButton">
+    <style>
+
+      <set drawmode="alphablend"/>
+      <clip x1="0" y1="HEIGHT-3LS" x2="WIDTH" y2="HEIGHT">
+        <set color="#39424c"/>
+        <drawrectrounded x1="0" y1="HEIGHT-8LS" x2="WIDTH" y2="HEIGHT" r="3LS"/>
+      </clip>
+      <set color="#39424c"/>
+      <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT-1LS" r="3LS"/>
+      <set gradient1color="#9c4b70"/>
+      <set gradient2color="#9c4b70"/>
+      <set gradient3color="#9c4b70"/>
+      <set gradient4color="#9c4b70"/>
+
+      <gradientrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+      <set fillstyle="gradient"/>
+      <fillrectrounded x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT-2LS" r="2LS"/>
+      <set fillstyle="solid"/>
+
+      <if state="MOUSE_OVER">
+        <set imageid="closeButtonMouseOverBitmap"/>
+        <set drawmode="alphablend"/>
+        <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="1" dy="1" dw="15" dh="15"/>
+      </if>
+      <if state="not MOUSE_OVER">
+        <if state="FOCUSED">
+          <set imageid="closeButtonMouseOverBitmap"/>
+          <set drawmode="alphablend"/>
+          <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="1" dy="1" dw="15" dh="15"/>
+        </if>
+        <if state="not FOCUSED">
+          <set imageid="closeButtonBitmap"/>
+          <set drawmode="alphablend"/>
+          <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="1" dy="1" dw="15" dh="15"/>
+        </if>
+      </if>
+
+    </style>
+  </element>
+
+  <element name="windowMoveButton">
+    <style>
+      <if state="FOCUSED">
+        <!--<set color="focusColor"/>-->
+        <set color="#ccccccff"/>
+        <set drawmode="alphablend"/>
+        <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT" r="2LS"/>
+        <set drawmode="replace"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="windowMoveButtonBorderless">
+    <style>
+      <if state="FOCUSED">
+        <set color="focusColor"/>
+        <set drawmode="alphablend"/>
+        <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT" r="2LS"/>
+        <set drawmode="replace"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="selection">
+    <style>
+      <set imageid="selectionbitmap"/>
+      <drawimage sx="0" sy="0" sw="1" sh="256" dx="0" dy="0" dw="WIDTH" dh="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="selection_nf">
+    <style>
+      <set imageid="selectionbitmap_nf"/>
+      <drawimage sx="0" sy="0" sw="1" sh="256" dx="0" dy="0" dw="WIDTH" dh="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="border">
+    <style>
+      <property name="childInsets" value="2 2 1 2" type="insets"/>
+
+      <set fillstyle="solid"/>
+
+      <set color="background"/>
+      <fillquad_r x1="0" y1="0" x2="WIDTH" y2="0" x3="WIDTH-1" y3="1" x4="1" y4="1"/>
+
+      <set color="background"/>
+      <fillquad_r x1="1" y1="1" x2="WIDTH-1" y2="1" x3="WIDTH-2" y3="2" x4="2" y4="2"/>
+
+      <set color="background"/>
+      <fillquad_r x1="0" y1="0" x2="0" y2="HEIGHT" x3="1" y3="HEIGHT-1" x4="1" y4="1"/>
+      <fillquad_r x1="WIDTH-1" y1="1" x2="WIDTH-1" y2="HEIGHT-1" x3="WIDTH" y3="HEIGHT" x4="WIDTH" y4="0"/>
+
+      <set color="background"/>
+      <fillquad_r x1="1" y1="1" x2="1" y2="HEIGHT-1" x3="2" y3="HEIGHT-2" x4="2" y4="2"/>
+      <fillquad_r x1="WIDTH-2" y1="2" x2="WIDTH-2" y2="HEIGHT-2" x3="WIDTH-1" y3="HEIGHT-1" x4="WIDTH-1" y4="1"/>
+
+      <set color="background"/>
+      <!--<drawline x1="1" y1="HEIGHT-1" x2="WIDTH-1" y2="HEIGHT-1"/>-->
+      <fillquad_r x1="0" y1="HEIGHT" x2="WIDTH" y2="HEIGHT" x3="WIDTH-1" y3="HEIGHT-1" x4="1" y4="HEIGHT-1"/>
+
+      <!--
+      <set color="#808080ff"/>
+      <drawline x1="0" y1="0" x2="WIDTH" y2="0"/>
+      <set color="#d4d4d4ff"/>
+      <drawline x1="1" y1="1" x2="WIDTH-1" y2="1"/>
+      <set color="#b8b8b8ff"/>
+      <drawline x1="0" y1="1" x2="0" y2="HEIGHT"/>
+      <drawline x1="WIDTH-1" y1="1" x2="WIDTH-1" y2="HEIGHT"/>
+      <set color="#ebebebff"/>
+      <drawline x1="1" y1="2" x2="1" y2="HEIGHT-1"/>
+      <drawline x1="WIDTH-2" y1="2" x2="WIDTH-2" y2="HEIGHT-1"/>
+      <set color="#d0d0d0ff"/>
+      <drawline x1="1" y1="HEIGHT-1" x2="WIDTH-1" y2="HEIGHT-1"/>
+      -->
+    </style>
+  </element>
+
+  <element name="borderWithTitle">
+    <style>
+      <property name="childInsets" value="18LS 2LS 1LS 2LS" type="insets"/>
+
+      <set fontid="standard"/>
+      <set colorproperty="foregroundColor"/>
+      <textout x="2" y="0" method="title"/>
+
+      <set color="background"/>
+      <drawline x1="0" y1="16LS" x2="WIDTH" y2="16LS"/>
+      <set color="background"/>
+      <drawline x1="1LS" y1="17LS" x2="WIDTH-1LS" y2="17LS"/>
+      <set color="background"/>
+      <drawline x1="0" y1="17LS" x2="0" y2="HEIGHT"/>
+      <drawline x1="WIDTH-1LS" y1="17LS" x2="WIDTH-1LS" y2="HEIGHT"/>
+      <set color="background"/>
+      <drawline x1="1LS" y1="18LS" x2="1LS" y2="HEIGHT-1LS"/>
+      <drawline x1="WIDTH-2" y1="18LS" x2="WIDTH-2LS" y2="HEIGHT-1LS"/>
+      <set color="background"/>
+      <drawline x1="1LS" y1="HEIGHT-1LS" x2="WIDTH-1LS" y2="HEIGHT-1LS"/>
+    </style>
+  </element>
+
+  <element name="disabledborder">
+    <style>
+      <property name="childInsets" value="2LS 1LS 1LS 1LS" type="insets"/>
+
+      <set color="#a0a0a0ff"/>
+      <fillquad_r x1="0" y1="0" x2="1LS" y2="1LS" x3="WIDTH-1LS" y3="1LS" x4="WIDTH" y4="0"/>
+
+      <set color="#dbdbdbff"/>
+      <fillrect x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="2LS"/>
+
+      <set color="#d0d0d0ff"/>
+      <fillquad_r x1="0" y1="0" x2="0" y2="HEIGHT" x3="1LS" y3="HEIGHT-1LS" x4="1LS" y4="1LS"/>
+
+      <fillquad_r x1="WIDTH" y1="0" x2="WIDTH-1LS" y2="1LS" x3="WIDTH-1LS" y3="HEIGHT-1LS" x4="WIDTH" y4="HEIGHT"/>
+
+      <set color="#e4e4e4ff"/>
+      <fillquad_r x1="0" y1="HEIGHT" x2="WIDTH" y2="HEIGHT" x3="WIDTH-1LS" y3="HEIGHT-1LS" x4="1LS" y4="HEIGHT-1LS"/>
+    </style>
+  </element>
+
+  <element name="borderup">
+    <style>
+      <set color="background"/>
+      <fillquad_r x1="1LS" y1="1LS" x2="2LS" y2="2LS" x3="WIDTH-2LS" y3="2LS" x4="WIDTH-1LS" y4="1LS"/>
+      <fillquad_r x1="1LS" y1="1LS" x2="1LS" y2="HEIGHT-1LS" x3="2LS" y3="HEIGHT-2LS" x4="2LS" y4="2LS"/>
+      <set color="background"/>
+      <fillquad_r x1="1LS" y1="HEIGHT-1LS" x2="0" y2="HEIGHT" x3="WIDTH" y3="HEIGHT" x4="WIDTH-1LS" y4="HEIGHT-1LS"/>
+      <fillquad_r x1="WIDTH" y1="0" x2="WIDTH-1LS" y2="1LS" x3="WIDTH-1LS" y3="HEIGHT-1LS" x4="WIDTH" y4="HEIGHT"/>
+      <set color="background"/>
+      <fillquad_r x1="2LS" y1="HEIGHT-2LS" x2="1LS" y2="HEIGHT-1LS" x3="WIDTH-1LS" y3="HEIGHT-1LS" x4="WIDTH-2LS" y4="HEIGHT-2LS"/>
+      <fillquad_r x1="WIDTH-1LS" y1="1LS" x2="WIDTH-2LS" y2="2LS" x3="WIDTH-2LS" y3="HEIGHT-2LS" x4="WIDTH-1LS" y4="HEIGHT-1LS"/>
+    </style>
+  </element>
+
+  <element name="smallBorder">
+    <style>
+      <property name="childInsets" value="1LS 1LS 1LS 1LS" type="insets"/>
+      <set color="background"/>
+      <fillquad_r x1="0" y1="0" x2="1LS" y2="1LS" x3="WIDTH-1LS" y3="1LS" x4="WIDTH" y4="0"/>
+      <fillquad_r x1="0" y1="0" x2="0" y2="HEIGHT" x3="1LS" y3="HEIGHT-1LS" x4="1LS" y4="1LS"/>
+
+      <set color="background"/>
+      <fillquad_r x1="0" y1="HEIGHT" x2="WIDTH" y2="HEIGHT" x3="WIDTH-1LS" y3="HEIGHT-1LS" x4="1LS" y4="HEIGHT-1LS"/>
+      <fillquad_r x1="WIDTH" y1="0" x2="WIDTH-1LS" y2="1LS" x3="WIDTH-1LS" y3="HEIGHT-1LS" x4="WIDTH" y4="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="smallBorderWithTitle">
+    <style>
+      <property name="childInsets" value="17LS 1LS 1LS 1LS" type="insets"/>
+
+      <set fontid="standard"/>
+      <set colorproperty="foregroundColor"/>
+      <textout x="2" y="0" method="title"/>
+
+      <set color="background"/>
+      <fillquad_r x1="0" y1="16LS" x2="1LS" y2="17LS" x3="WIDTH-1LS" y3="17LS" x4="WIDTH" y4="16LS"/>
+      <fillquad_r x1="0" y1="16LS" x2="0" y2="HEIGHT" x3="1LS" y3="HEIGHT-1LS" x4="1LS" y4="17LS"/>
+
+      <set color="background"/>
+      <fillquad_r x1="0" y1="HEIGHT" x2="WIDTH" y2="HEIGHT" x3="WIDTH-1LS" y3="HEIGHT-1LS" x4="1" y4="HEIGHT-1LS"/>
+      <fillquad_r x1="WIDTH" y1="16LS" x2="WIDTH-1LS" y2="17LS" x3="WIDTH-1LS" y3="HEIGHT-1LS" x4="WIDTH" y4="HEIGHT"/>
+    </style>
+  </element>
+
+
+  <element name="smallborderup">
+    <style>
+      <set color="#415e86"/>
+      <drawline x1="0" y1="0" x2="WIDTH-1LS" y2="0"/>
+      <drawline x1="0" y1="0" x2="0" y2="HEIGHT-1LS"/>
+      <set color="#415e86"/>
+      <drawline x1="0" y1="HEIGHT-1LS" x2="WIDTH-1LS" y2="HEIGHT-1LS"/>
+      <drawline x1="WIDTH-1LS" y1="0" x2="WIDTH-1LS" y2="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="gridView">
+    <style>
+      <property name="defaultSize" value="50 50" type="size"/>
+    </style>
+  </element>
+
+  <element name="horizontalLine">
+    <style>
+      <property name="defaultSize" value="100 2" type="size"/>
+      <set color="border3dmid"/>
+      <drawline x1="0" y1="0" x2="WIDTH-1" y2="0"/>
+      <drawline x1="0" y1="0" x2="0" y2="1"/>
+      <set color="border3dhigh"/>
+      <drawline x1="0" y1="1" x2="WIDTH-1" y2="1"/>
+      <drawline x1="WIDTH-1" y1="0" x2="WIDTH-1" y2="2"/>
+    </style>
+  </element>
+
+  <element name="labelView">
+    <style>
+      <property name="font" value="standard" type="fontid"/>
+      <property name="defaultSize" value="100 20" type="size"/>
+      <property name="defaultForegroundColor" value="#cdd3da" type="color"/>
+
+      <if state="ENABLED">
+        <set colorproperty="foregroundColor"/>
+        <textout x="0" y="0" method="label"/>
+      </if>
+      <if state="DISABLED">
+        <set color="border3dhigh"/>
+        <textout x="1" y="1" method="label"/>
+        <set color="border3dmid"/>
+        <textout x="0" y="0" method="label"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="htmlLinkView">
+    <style>
+      <if state="FOCUSED">
+        <set color="focusColor"/>
+        <set drawmode="alphablend"/>
+        <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT" r="2LS"/>
+        <set drawmode="replace"/>
+      </if>
+    </style>
+  </element>
+
+ <element name="buttonView">
+    <style>
+      <property name="defaultSize" value="80 24" type="size"/>
+      <property name="defaultForegroundColor" value="#cdd3da" type="color"/>
+
+      <if state="ENABLED">
+        <if state="PRESSED">
+            <set gradient1color="#415e86"/>
+            <set gradient2color="#415e86"/>
+            <set gradient3color="#415e86"/>
+            <set gradient4color="#415e86"/>
+            <gradientrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT-1LS"/>
+            <set fillstyle="gradient"/>
+            <fillrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT-1LS" r="3LS"/>
+            <set fillstyle="solid"/>
+
+            <set fontid="button"/>
+            <set colorproperty="foregroundColor"/>
+
+            <clip x1="3LS" y1="3LS" x2="WIDTH-3LS" y2="HEIGHT-3LS">
+              <textout x="WIDTH/2" y="HEIGHT/2+1LS" method="centeredTitle"/>
+            </clip>
+
+            <clip x1="0" y1="HEIGHT-3LS" x2="WIDTH" y2="HEIGHT">
+              <set color="#415e86"/>
+              <drawrectrounded x1="0" y1="HEIGHT-8LS" x2="WIDTH" y2="HEIGHT" r="3LS"/>
+            </clip>
+            <set color="#23262a"/>
+            <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT-1LS" r="3LS"/>
+
+            <set color="pressedColor"/>
+            <drawrectrounded x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT-2LS" r="2LS"/>
+            <drawrectrounded x1="2LS" y1="2LS" x2="WIDTH-2LS" y2="HEIGHT-3LS" r="1LS"/>
+        </if>
+        <if state="not PRESSED">
+          <set gradient1color="#39424c"/>
+          <set gradient2color="#39424c"/>
+          <set gradient3color="#39424c"/>
+          <set gradient4color="#39424c"/>
+          <gradientrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT-1LS"/>
+          <set fillstyle="gradient"/>
+          <fillrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT-1LS" r="3LS"/>
+          <set fillstyle="solid"/>
+
+          <set fontid="button"/>
+          <set colorproperty="foregroundColor"/>
+
+
+          <clip x1="3LS" y1="3LS" x2="WIDTH-3LS" y2="HEIGHT-3LS">
+            <textout x="WIDTH/2-1LS" y="HEIGHT/2" method="centeredTitle"/>
+          </clip>
+
+          <clip x1="0" y1="HEIGHT-3LS" x2="WIDTH" y2="HEIGHT">
+            <set color="#23262a"/>
+            <drawrectrounded x1="0" y1="HEIGHT-8LS" x2="WIDTH" y2="HEIGHT" r="3LS"/>
+          </clip>
+          <set color="#23262a"/>
+          <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT-1LS" r="3LS"/>
+
+
+          <if state="MOUSE_OVER">
+            <set color="mouseOverButtonColorTop"/>
+            <drawrectrounded x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT-2LS" r="2LS"/>
+          </if>
+          <if state="not MOUSE_OVER">
+            <if state="DEFAULT">
+              <set color="focusColor"/>
+              <set drawmode="alphablend"/>
+              <drawrectrounded x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT-2LS" r="2LS"/>
+              <drawrectrounded x1="2LS" y1="2LS" x2="WIDTH-2LS" y2="HEIGHT-3LS" r="1LS"/>
+              <set drawmode="replace"/>
+            </if>
+            <if state="not DEFAULT and FOCUSED">
+              <set color="focusColor"/>
+              <set drawmode="alphablend"/>
+              <drawrectrounded x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT-2LS" r="2LS"/>
+              <drawrectrounded x1="2LS" y1="2LS" x2="WIDTH-2LS" y2="HEIGHT-3LS" r="1LS"/>
+              <set drawmode="replace"/>
+            </if>
+          </if>
+        </if>
+      </if>
+      <if state="DISABLED">
+        <if state="PRESSED">
+           <set gradient1color="#415e86"/>
+            <set gradient2color="#415e86"/>
+            <set gradient3color="#415e86"/>
+            <set gradient4color="#415e86"/>
+            <gradientrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT-1LS"/>
+            <set fillstyle="gradient"/>
+            <fillrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT-1LS" r="3LS"/>
+            <set fillstyle="solid"/>
+
+            <clip x1="0" y1="HEIGHT-3LS" x2="WIDTH" y2="HEIGHT">
+              <set color="#23262a"/>
+              <drawrectrounded x1="0" y1="HEIGHT-8LS" x2="WIDTH" y2="HEIGHT" r="3LS"/>
+            </clip>
+
+            <set color="#000000"/>
+            <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT-1LS" r="3LS"/>
+
+          <set fontid="button"/>
+          <set color="border3dhigh"/>
+
+          <clip x1="3LS" y1="3LS" x2="WIDTH-3LS" y2="HEIGHT-3LS">
+          <textout x="WIDTH/2+1LS" y="HEIGHT/2+2LS" method="centeredTitle"/>
+          <set color="border3dmid"/>
+          <textout x="WIDTH/2" y="HEIGHT/2+1LS" method="centeredTitle"/>
+          </clip>
+        </if>
+        <if state="not PRESSED">
+            <set gradient1color="#39424c"/>
+            <set gradient2color="#39424c"/>
+            <set gradient3color="#39424c"/>
+            <set gradient4color="#39424c"/>
+            <gradientrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT-1LS"/>
+            <set fillstyle="gradient"/>
+            <fillrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT-1LS" r="3LS"/>
+            <set fillstyle="solid"/>
+
+            <clip x1="0" y1="HEIGHT-3LS" x2="WIDTH" y2="HEIGHT">
+              <set color="#39424c"/>
+              <drawrectrounded x1="0" y1="HEIGHT-8LS" x2="WIDTH" y2="HEIGHT" r="3LS"/>
+            </clip>
+
+            <set color="#39424c"/>
+            <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT-1LS" r="3LS"/>
+
+          <set fontid="button"/>
+          <set color="border3dhigh"/>
+          <clip x1="3LS" y1="3LS" x2="WIDTH-3LS" y2="HEIGHT-3LS">
+            <textout x="WIDTH/2" y="HEIGHT/2+1LS" method="centeredTitle"/>
+            <set color="border3dmid"/>
+            <textout x="WIDTH/2-1LS" y="HEIGHT/2" method="centeredTitle"/>
+          </clip>
+
+        </if>
+      </if>
+    </style>
+  </element>
+
+  <element name="radioButtonView">
+    <style>
+      <property name="defaultSize" value="24 24" type="size"/>
+      <property name="defaultForegroundColor" value="#39424c" type="color"/>
+      <property name="buttonSize" value="16 16" type="size"/>
+
+      <property name="font" value="standard" type="fontid"/>
+      <property name="textOffset" value="19 2" type="point"/>
+
+      <set fontid="standard"/>
+
+      <if state="ENABLED">
+
+        <set color="#23262a"/>
+        <fillrectrounded x1="1" y1="1" x2="15" y2="16" r="7"/>
+
+        <if state="PRESSED">
+          <set color="pressedColor"/>
+          <fillrectrounded x1="2" y1="2" x2="14" y2="13" r="5"/>
+        </if>
+        <if state="not PRESSED">
+          <set color="#23262a"/>
+          <fillrectrounded x1="2" y1="2" x2="14" y2="13" r="5"/>
+        </if>
+
+        <set color="#23262a"/>
+        <drawrectrounded x1="1" y1="1" x2="15" y2="15" r="7"/>
+
+        <if state="SELECTED">
+          <set color="#23262a"/>
+         <fillrectrounded x1="5" y1="5" x2="11" y2="11" r="3"/>
+        </if>
+
+        <set fontid="standard"/>
+        <set colorproperty="foregroundColor"/>
+        <textout x="19" y="2" method="title"/>
+      </if>
+      <if state="DISABLED">
+
+        <set color="#23262a"/>
+        <fillrectrounded x1="1" y1="1" x2="15" y2="16" r="7"/>
+
+        <set color="#23262a"/>
+        <fillrectrounded x1="2" y1="2" x2="14" y2="13" r="5"/>
+
+        <set color="#23262a"/>
+        <drawrectrounded x1="1" y1="1" x2="15" y2="15" r="7"/>
+
+        <if state="SELECTED">
+          <set color="#23262a"/>
+         <fillrectrounded x1="5" y1="5" x2="11" y2="11" r="3"/>
+        </if>
+
+        <set fontid="standard"/>
+        <set color="border3dhigh"/>
+        <textout x="20" y="3" method="title"/>
+        <set color="border3dmid"/>
+        <textout x="19" y="2" method="title"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="tabView">
+    <style>
+      <property name="font" value="standard" type="fontid"/>
+      <property name="minTabWidth" value="16" type="int"/>
+      <property name="tabOffsetX" value="5" type="int"/>
+      <property name="tabHeight" value="24" type="int"/>
+      <property name="childInsets" value="34 2 2 2" type="insets"/>
+
+      <drawelem name="scrollbarButtonBorder" x1="0" y1="24" x2="WIDTH" y2="HEIGHT"/>
+
+      <if state="DISABLED">
+        <set saturation="78"/>
+      </if>
+      <if state="INACTIVE">
+        <set saturation="78"/>
+      </if>
+
+      <set fillstyle="gradient"/>
+      <set gradient1color="gradientsel4"/>
+      <set gradient2color="gradientsel4"/>
+      <set gradient3color="gradientsel3"/>
+      <set gradient4color="gradientsel3"/>
+      <gradientrect x1="0" y1="26" x2="WIDTH" y2="32"/>
+      <fillrect x1="2" y1="26" x2="WIDTH-1" y2="32"/>
+
+      <set saturation="255"/>
+
+      <set fillstyle="solid"/>
+      <set color="#39424c"/>
+      <drawline x1="2" y1="32" x2="WIDTH-1" y2="32"/>
+      <set color="#39424c"/>
+      <drawline x1="2" y1="33" x2="WIDTH-1" y2="33"/>
+
+
+    </style>
+  </element>
+
+  <element name="tab">
+    <style>
+
+      <if state="not SELECTED">
+        <set gradient1color="#39424c"/>
+        <set gradient2color="#39424c"/>
+        <set gradient3color="#39424c"/>
+        <set gradient4color="#39424c"/>
+        <gradientrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT-1"/>
+        <set fillstyle="gradient"/>
+        <clip x1="0" y1="0" x2="WIDTH" y2="HEIGHT">
+          <fillrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT+5" r="3"/>
+        </clip>
+        <set fillstyle="solid"/>
+
+        <!--<set fontid="standard"/>-->
+        <set color="textColor"/>
+        <textout x="WIDTH/2-1" y="HEIGHT/2" method="centeredTitle"/>
+
+        <clip x1="0" y1="0" x2="WIDTH" y2="HEIGHT">
+          <set color="#39424c"/>
+          <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT+5" r="3"/>
+        </clip>
+      </if>
+      <if state="SELECTED">
+
+        <if state="DISABLED">
+          <set saturation="78"/>
+        </if>
+        <if state="INACTIVE">
+          <set saturation="78"/>
+        </if>
+
+        <set gradient1color="gradientsel1"/>
+        <set gradient2color="gradientsel1"/>
+        <set gradient3color="gradientsel2"/>
+        <set gradient4color="gradientsel2"/>
+        <gradientrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT/2"/>
+        <set fillstyle="gradient"/>
+        <clip x1="0" y1="0" x2="WIDTH" y2="HEIGHT/2">
+          <fillrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT+5" r="3"/>
+        </clip>
+        <set gradient1color="gradientsel3"/>
+        <set gradient2color="gradientsel3"/>
+        <set gradient3color="gradientsel4"/>
+        <set gradient4color="gradientsel4"/>
+        <gradientrect x1="0" y1="HEIGHT/2" x2="WIDTH" y2="HEIGHT+2"/>
+        <clip x1="0" y1="HEIGHT/2" x2="WIDTH" y2="HEIGHT+2">
+          <fillrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT+5" r="3"/>
+        </clip>
+        <set fillstyle="solid"/>
+
+        <set saturation="255"/>
+
+        <!--<set fontid="standard"/>-->
+        <set color="#ffffffff"/>
+        <textout x="WIDTH/2-1" y="HEIGHT/2" method="centeredTitle"/>
+
+        <clip x1="0" y1="0" x2="WIDTH" y2="HEIGHT+1">
+          <set color="gradientsel2"/>
+          <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT+5" r="3"/>
+        </clip>
+
+        <if state="FOCUSED">
+          <set color="gradientsel3"/>
+          <set drawmode="alphablend"/>
+          <drawrectrounded x1="2LS" y1="2LS" x2="WIDTH-2LS" y2="HEIGHT" r="2LS"/>
+          <set drawmode="replace"/>
+        </if>
+
+      </if>
+      <if state="PRESSED and not SELECTED">
+
+        <set saturation="70"/>
+
+        <set gradient1color="gradientsel1"/>
+        <set gradient2color="gradientsel1"/>
+        <set gradient3color="gradientsel2"/>
+        <set gradient4color="gradientsel2"/>
+        <gradientrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT/2"/>
+        <set fillstyle="gradient"/>
+        <clip x1="0" y1="0" x2="WIDTH" y2="HEIGHT/2">
+          <fillrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT+5" r="3"/>
+        </clip>
+        <set gradient1color="gradientsel3"/>
+        <set gradient2color="gradientsel3"/>
+        <set gradient3color="gradientsel4"/>
+        <set gradient4color="gradientsel4"/>
+        <gradientrect x1="0" y1="HEIGHT/2" x2="WIDTH" y2="HEIGHT+2"/>
+        <clip x1="0" y1="HEIGHT/2" x2="WIDTH" y2="HEIGHT+1">
+          <fillrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT+5" r="3"/>
+        </clip>
+        <set fillstyle="solid"/>
+
+        <set saturation="255"/>
+
+        <!--<set fontid="standard"/>-->
+        <set color="gradientsel3"/>
+        <textout x="WIDTH/2-1" y="HEIGHT/2" method="centeredTitle"/>
+
+        <clip x1="0" y1="0" x2="WIDTH" y2="HEIGHT+1">
+          <set color="background"/>
+          <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT+2" r="3"/>
+        </clip>
+      </if>
+    </style>
+  </element>
+
+  <element name="imageView">
+    <style>
+    </style>
+  </element>
+
+  <element name="imagemapView">
+    <style>
+    </style>
+  </element>
+
+  <element name="slider">
+    <style>
+      <property name="defaultSize" value="100 21" type="size"/>
+      <property name="knobSize" value="16 17" type="size"/>
+
+      <set color="#39424c"/>
+      <fillrectrounded x1="5" y1="7" x2="WIDTH-5" y2="13" r="2"/>
+      <gradientrect x1="0" y1="7" x2="WIDTH" y2="13"/>
+      <set fillstyle="gradient"/>
+      <set gradient1color="#39424c"/>
+      <set gradient2color="#39424c"/>
+      <set gradient3color="#39424c"/>
+      <set gradient4color="#39424c"/>
+      <clip x1="0" y1="7" x2="WIDTH" y2="12">
+        <fillrectrounded x1="5" y1="7" x2="WIDTH-5" y2="13" r="2"/>
+        <set color="#39424c"/>
+      </clip>
+      <set drawmode="alphablend"/>
+      <set color="#39424c"/>
+
+      <clip x1="5" y1="7" x2="8" y2="13">
+        <drawrectrounded x1="5" y1="7" x2="15" y2="13" r="3"/>
+      </clip>
+      <clip x1="WIDTH-8" y1="7" x2="WIDTH-5" y2="13">
+        <drawrectrounded x1="WIDTH-15" y1="7" x2="WIDTH-5" y2="13" r="3"/>
+      </clip>
+
+      <set drawmode="replace"/>
+      <set fillstyle="solid"/>
+
+      <if state="FOCUSED">
+        <set color="focusColor"/>
+        <set drawmode="alphablend"/>
+        <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT" r="2LS"/>
+        <set drawmode="replace"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="sliderKnob">
+    <style>
+      <if state="DISABLED">
+        <set color="#415e86"/>
+        <fillrectrounded x1="0" y1="0" x2="16" y2="17" r="8"/>
+        <set color="disabledBackground"/>
+        <fillrectrounded x1="0" y1="0" x2="16" y2="16" r="8"/>
+        <set color="#c0c0c0ff"/>
+        <drawrectrounded x1="0" y1="0" x2="16" y2="16" r="8"/>
+      </if>
+      <if state="ENABLED">
+        <set color="#415e86"/>
+        <fillrectrounded x1="0" y1="0" x2="16" y2="17" r="8"/>
+
+        <set fillstyle="gradient"/>
+
+        <set gradient1color="#415e86"/>
+        <set gradient2color="#415e86"/>
+        <set gradient3color="#415e86"/>
+        <set gradient4color="#415e86"/>
+        <gradientrect x1="0" y1="0" x2="16" y2="8"/>
+        <clip x1="0" y1="1" x2="16" y2="9">
+          <fillrectrounded x1="0" y1="0" x2="16" y2="16" r="8"/>
+        </clip>
+
+        <set gradient1color="#415e86"/>
+        <set gradient2color="#415e86"/>
+        <set gradient3color="#415e86"/>
+        <set gradient4color="#415e86"/>
+        <gradientrect x1="0" y1="8" x2="16" y2="16"/>
+        <clip x1="0" y1="8" x2="16" y2="16">
+          <fillrectrounded x1="0" y1="0" x2="16" y2="16" r="8"/>
+        </clip>
+
+        <set fillstyle="solid"/>
+
+        <set color="#415e86"/>
+        <drawrectrounded x1="0" y1="0" x2="16" y2="16" r="8"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="verticalSlider">
+    <style>
+      <property name="defaultSize" value="21 100" type="size"/>
+      <property name="knobSize" value="16 17" type="size"/>
+
+      <set color="#39424c"/>
+      <fillrectrounded x1="8" y1="5" x2="14" y2="HEIGHT-5" r="2"/>
+      <gradientrect x1="8" y1="5" x2="13" y2="HEIGHT-5"/>
+      <set fillstyle="gradient"/>
+      <set gradient1color="#39424c"/>
+      <set gradient2color="#39424c"/>
+      <set gradient3color="#39424c"/>
+      <set gradient4color="#39424c"/>
+      <clip x1="8" y1="5" x2="13" y2="HEIGHT-5">
+        <fillrectrounded x1="8" y1="5" x2="14" y2="HEIGHT-5" r="2"/>
+        <set color="#39424c"/>
+      </clip>
+      <set drawmode="alphablend"/>
+      <set color="#39424c"/>
+
+      <clip x1="8" y1="5" x2="14" y2="8">
+        <drawrectrounded x1="8" y1="5" x2="14" y2="15" r="3"/>
+      </clip>
+      <clip x1="8" y1="HEIGHT-8" x2="14" y2="HEIGHT-5">
+        <drawrectrounded x1="8" y1="HEIGHT-15" x2="14" y2="HEIGHT-5" r="3"/>
+      </clip>
+
+      <set drawmode="replace"/>
+      <set fillstyle="solid"/>
+
+      <if state="FOCUSED">
+        <set color="focusColor"/>
+        <set drawmode="alphablend"/>
+        <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT" r="2LS"/>
+        <set drawmode="replace"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="verticalSliderKnob">
+    <style>
+      <if state="DISABLED">
+        <set color="#415e86"/>
+        <fillrectrounded x1="0" y1="0" x2="16" y2="17" r="8"/>
+        <set color="disabledBackground"/>
+        <fillrectrounded x1="0" y1="0" x2="16" y2="16" r="8"/>
+        <set color="#c0c0c0ff"/>
+        <drawrectrounded x1="0" y1="0" x2="16" y2="16" r="8"/>
+      </if>
+      <if state="ENABLED">
+        <set color="#415e86"/>
+        <fillrectrounded x1="0" y1="0" x2="16" y2="17" r="8"/>
+
+        <set fillstyle="gradient"/>
+
+        <set gradient1color="#415e86"/>
+        <set gradient2color="#415e86"/>
+        <set gradient3color="#415e86"/>
+        <set gradient4color="#415e86"/>
+        <gradientrect x1="0" y1="0" x2="16" y2="8"/>
+        <clip x1="0" y1="0" x2="16" y2="8">
+          <fillrectrounded x1="0" y1="0" x2="16" y2="16" r="8"/>
+        </clip>
+
+        <set gradient1color="#415e86"/>
+        <set gradient2color="#415e86"/>
+        <set gradient3color="#415e86"/>
+        <set gradient4color="#415e86"/>
+        <gradientrect x1="0" y1="8" x2="16" y2="16"/>
+        <clip x1="0" y1="8" x2="16" y2="16">
+          <fillrectrounded x1="0" y1="0" x2="16" y2="16" r="8"/>
+        </clip>
+
+        <set fillstyle="solid"/>
+
+        <set color="#415e86"/>
+        <drawrectrounded x1="0" y1="0" x2="16" y2="16" r="8"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="textFieldView">
+    <style>
+      <property name="font" value="standard" type="fontid"/>
+      <property name="defaultSize" value="60 22" type="size"/>
+      <property name="defaultForegroundColor" value="#cdd3da" type="color"/>
+      <property name="defaultBackgroundColor" value="#39424c" type="color"/>
+      <property name="borderWidth" value="2" type="int"/>
+      <property name="textColor" value="#cdd3da" type="color"/>
+      <property name="disabledTextColor" value="disabledTextColor" type="color"/>
+      <property name="disabledBackgroundColor" value="disabledBackground" type="color"/>
+    </style>
+  </element>
+
+  <element name="textFieldReadOnlyBackground">
+    <style>
+      <set colorproperty="backgroundColor"/>
+      <fillrect x1="1" y1="1" x2="WIDTH-1" y2="HEIGHT-1"/>
+    </style>
+  </element>
+
+  <element name="textFieldReadOnlyBorder">
+    <style>
+      <if state="ENABLED">
+        <drawelem name="border" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      </if>
+      <if state="DISABLED">
+        <drawelem name="disabledborder" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="textFieldBackground">
+    <style>
+      <set colorproperty="backgroundColor"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="textFieldBorder">
+    <style>
+      <if state="ENABLED">
+        <drawelem name="border" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      </if>
+      <if state="DISABLED">
+        <drawelem name="disabledborder" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="focusBorder">
+    <style>
+      <property name="viewInsets" value="3 3 3 3" type="insets"/>
+      <set drawmode="alphablend"/>
+      <set color="#415e86"/>
+      <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT" r="3LS"/>
+      <set color="#5E93FD70"/>
+      <drawrectrounded x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT-1LS" r="2LS"/>
+      <set color="#415e86"/>
+      <drawrectrounded x1="2LS" y1="2LS" x2="WIDTH-2LS" y2="HEIGHT-2LS" r="1LS"/>
+
+    </style>
+  </element>
+
+  <element name="enabledControlBackground">
+    <style>
+      <gradientrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      <set fillstyle="gradient"/>
+      <set gradient1color="controlGradientUp"/>
+      <set gradient2color="controlGradientUp"/>
+      <set gradient3color="controlGradientDown"/>
+      <set gradient4color="controlGradientDown"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      <set fillstyle="solid"/>
+      <set color="#39424c"/>
+      <drawline x1="0" y1="0" x2="0" y2="HEIGHT-1LS"/>
+      <drawline x1="WIDTH-1LS" y1="0" x2="WIDTH-1LS" y2="HEIGHT-1LS"/>
+    </style>
+  </element>
+
+  <element name="disabledControlBackground">
+    <style>
+      <set color="disabledBackground"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="pressedControlBackground">
+    <style>
+      <gradientrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      <set fillstyle="gradient"/>
+      <set gradient1color="controlGradientUpPressed"/>
+      <set gradient2color="controlGradientUpPressed"/>
+      <set gradient3color="controlGradientDownPressed"/>
+      <set gradient4color="controlGradientDownPressed"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      <set fillstyle="solid"/>
+    </style>
+  </element>
+
+  <element name="spinButtonView">
+    <style>
+      <property name="defaultSize" value="16 23" type="size"/>
+    </style>
+  </element>
+
+  <element name="spinButtonUp">
+    <style>
+      <if state="ENABLED">
+        <if state="PRESSED">
+          <drawelem name="pressedControlBackground" x1="0" y1="0" x2="WIDTH" y2="11"/>
+        </if>
+        <if state="not PRESSED">
+          <drawelem name="enabledControlBackground" x1="0" y1="0" x2="WIDTH" y2="11"/>
+        </if>
+
+        <set imageid="arrowUpSmallBitmap"/>
+        <set drawmode="alphablend"/>
+        <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="5" dy="3" dw="7" dh="7"/>
+      </if>
+      <if state="DISABLED">
+        <drawelem name="disabledControlBackground" x1="1" y1="1" x2="WIDTH-1" y2="10"/>
+        <set imageid="arrowUpDisabledSmallBitmap"/>
+        <set drawmode="alphablend"/>
+        <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="5" dy="3" dw="7" dh="7"/>
+      </if>
+      <set color="controlBorderColor"/>
+      <drawrect x1="0" y1="0" x2="WIDTH" y2="11"/>
+    </style>
+  </element>
+
+  <element name="spinButtonDown">
+    <style>
+      <if state="ENABLED">
+        <if state="PRESSED">
+          <drawelem name="pressedControlBackground" x1="0" y1="-1" x2="WIDTH" y2="11"/>
+        </if>
+        <if state="not PRESSED">
+          <drawelem name="enabledControlBackground" x1="0" y1="-1" x2="WIDTH" y2="11"/>
+        </if>
+        <set color="#23262a"/>
+        <drawline x1="0" y1="11" x2="WIDTH" y2="11"/>
+
+        <set imageid="arrowDownSmallBitmap"/>
+        <set drawmode="alphablend"/>
+        <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="5" dy="1" dw="7" dh="7"/>
+
+      </if>
+      <if state="DISABLED">
+        <drawelem name="disabledControlBackground" x1="1" y1="0" x2="WIDTH-1" y2="9"/>
+
+        <set imageid="arrowDownDisabledSmallBitmap"/>
+        <set drawmode="alphablend"/>
+        <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="5" dy="1" dw="7" dh="7"/>
+      </if>
+      <set color="controlBorderColor"/>
+      <drawrect x1="0" y1="-1" x2="WIDTH" y2="11"/>
+    </style>
+  </element>
+
+  <element name="checkboxView">
+    <style>
+      <property name="minSize" value="14 15" type="size"/>
+      <property name="buttonSize" value="14 15" type="size"/>
+      <property name="defaultSize" value="60 15" type="size"/>
+
+      <property name="font" value="standard" type="fontid"/>
+      <property name="textOffset" value="19 0" type="point"/>
+
+      <set fontid="standard"/>
+
+      <if state="ENABLED">
+
+        <if state="PRESSED">
+          <drawelem name="pressedControlBackground" x1="0" y1="0" x2="14" y2="14"/>
+        </if>
+        <if state="not PRESSED">
+          <drawelem name="enabledControlBackground" x1="0" y1="0" x2="14" y2="14"/>
+        </if>
+
+        <set color="controlBorderColor"/>
+        <drawrect x1="0" y1="0" x2="14" y2="14"/>
+
+        <set color="#23262a"/>
+        <drawline x1="0" y1="14" x2="14" y2="14"/>
+
+        <if state="SELECTED">
+          <set imageid="checkEnabledBitmap"/>
+          <set drawmode="alphablend"/>
+          <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="2" dy="2" dw="10" dh="10"/>
+        </if>
+        <set color="textColor"/>
+        <textout x="19" y="1" method="title"/>
+
+        <if state="FOCUSED">
+          <set color="focusColor"/>
+          <set drawmode="alphablend"/>
+          <drawrectrounded x1="17" y1="0" x2="WIDTH" y2="HEIGHT" r="2LS"/>
+          <set drawmode="replace"/>
+        </if>
+      </if>
+      <if state="DISABLED">
+
+        <drawelem name="disabledControlBackground" x1="0" y1="0" x2="14" y2="14"/>
+        <set color="#23262a"/>
+        <drawrect x1="0" y1="0" x2="14" y2="14"/>
+        <if state="SELECTED">
+          <set imageid="checkDisabledBitmap"/>
+          <set drawmode="alphablend"/>
+          <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="2" dy="2" dw="10" dh="10"/>
+        </if>
+        <set color="disabledTextColor"/>
+        <textout x="19" y="1" method="title"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="scrollView">
+    <style>
+      <property name="scrollbarSize" value="16 16" type="size"/>
+    </style>
+  </element>
+
+  <element name="horzScrollbarBackground">
+    <style>
+      <set fillstyle="gradient"/>
+      <set gradient1color="scrollbarBackground1"/>
+      <set gradient2color="scrollbarBackground1"/>
+      <set gradient3color="background"/>
+      <set gradient4color="background"/>
+      <gradientrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      <set fillstyle="solid"/>
+    </style>
+  </element>
+
+  <element name="vertScrollbarBackground">
+    <style>
+      <set fillstyle="gradient"/>
+      <set gradient1color="scrollbarBackground1"/>
+      <set gradient2color="background"/>
+      <set gradient3color="background"/>
+      <set gradient4color="scrollbarBackground1"/>
+      <gradientrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      <set fillstyle="solid"/>
+    </style>
+  </element>
+
+  <element name="scrollbarCorner">
+    <style>
+      <set fillstyle="gradient"/>
+      <set gradient1color="scrollbarBackground1"/>
+      <set gradient2color="background"/>
+      <set gradient3color="background"/>
+      <set gradient4color="background"/>
+      <gradientrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      <set fillstyle="solid"/>
+    </style>
+  </element>
+
+  <element name="scrollbarButtonBorder">
+    <style>
+      <set color="#23262a"/>
+      <fillquad_r x1="0" y1="0" x2="1LS" y2="1LS" x3="WIDTH-1LS" y3="1LS" x4="WIDTH" y4="0"/>
+      <fillquad_r x1="0" y1="0" x2="0" y2="HEIGHT" x3="1LS" y3="HEIGHT-1LS" x4="1LS" y4="1LS"/>
+      <set color="#23262a"/>
+      <fillquad_r x1="1LS" y1="1LS" x2="2LS" y2="2LS" x3="WIDTH-1LS" y3="2LS" x4="WIDTH-1LS" y4="1LS"/>
+      <fillquad_r x1="1LS" y1="1LS" x2="1LS" y2="HEIGHT-1LS" x3="2LS" y3="HEIGHT-1LS" x4="2LS" y4="2LS"/>
+      <set color="#23262a"/>
+      <fillquad_r x1="0" y1="HEIGHT" x2="WIDTH" y2="HEIGHT" x3="WIDTH-1LS" y3="HEIGHT-1LS" x4="1LS" y4="HEIGHT-1LS"/>
+      <fillquad_r x1="WIDTH" y1="0" x2="WIDTH-1LS" y2="1LS" x3="WIDTH-1LS" y3="HEIGHT-1LS" x4="WIDTH" y4="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="scrollbarVerticalButtonBackground">
+    <style>
+      <set fillstyle="gradient"/>
+
+      <set gradient1color="gradient1"/>
+      <set gradient2color="gradient2"/>
+      <set gradient3color="gradient2"/>
+      <set gradient4color="gradient1"/>
+      <gradientrect x1="2LS" y1="2LS" x2="WIDTH/2" y2="HEIGHT-1LS"/>
+      <fillrect x1="2LS" y1="2LS" x2="WIDTH/2" y2="HEIGHT-1LS"/>
+
+      <set gradient1color="gradient3"/>
+      <set gradient2color="gradient4"/>
+      <set gradient3color="gradient4"/>
+      <set gradient4color="gradient3"/>
+      <gradientrect x1="WIDTH/2" y1="2LS" x2="WIDTH-1LS" y2="HEIGHT-1LS"/>
+      <fillrect x1="WIDTH/2" y1="2LS" x2="WIDTH-1LS" y2="HEIGHT-1LS"/>
+
+      <set fillstyle="solid"/>
+    </style>
+  </element>
+
+  <element name="scrollbarVerticalButtonBackgroundPressed">
+    <style>
+      <set fillstyle="gradient"/>
+
+      <set gradient1color="gradientsel1"/>
+      <set gradient2color="gradientsel2"/>
+      <set gradient3color="gradientsel2"/>
+      <set gradient4color="gradientsel1"/>
+      <gradientrect x1="1LS" y1="1LS" x2="WIDTH/2" y2="HEIGHT-1LS"/>
+      <fillrect x1="1LS" y1="1LS" x2="WIDTH/2" y2="HEIGHT-1LS"/>
+
+      <set gradient1color="gradientsel3"/>
+      <set gradient2color="gradientsel4"/>
+      <set gradient3color="gradientsel4"/>
+      <set gradient4color="gradientsel3"/>
+      <gradientrect x1="WIDTH/2" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT-1LS"/>
+      <fillrect x1="WIDTH/2" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT-1LS"/>
+
+      <set fillstyle="solid"/>
+    </style>
+  </element>
+
+  <element name="scrollbarHorizontalButtonBackground">
+    <style>
+      <set fillstyle="gradient"/>
+
+      <set gradient1color="gradient1"/>
+      <set gradient2color="gradient1"/>
+      <set gradient3color="gradient2"/>
+      <set gradient4color="gradient2"/>
+      <gradientrect x1="2LS" y1="2LS" x2="WIDTH-1LS" y2="HEIGHT/2"/>
+      <fillrect x1="2LS" y1="2LS" x2="WIDTH-1LS" y2="HEIGHT/2"/>
+
+      <set gradient1color="gradient3"/>
+      <set gradient2color="gradient3"/>
+      <set gradient3color="gradient4"/>
+      <set gradient4color="gradient4"/>
+      <gradientrect x1="2LS" y1="HEIGHT/2" x2="WIDTH-1LS" y2="HEIGHT-1LS"/>
+      <fillrect x1="2LS" y1="HEIGHT/2" x2="WIDTH-1LS" y2="HEIGHT-1LS"/>
+      <set fillstyle="solid"/>
+    </style>
+  </element>
+
+  <element name="scrollbarHorizontalButtonBackgroundPressed">
+    <style>
+      <set fillstyle="gradient"/>
+
+      <set gradient1color="gradientsel1"/>
+      <set gradient2color="gradientsel1"/>
+      <set gradient3color="gradientsel2"/>
+      <set gradient4color="gradientsel2"/>
+      <gradientrect x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT/2"/>
+      <fillrect x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT/2"/>
+
+      <set gradient1color="gradientsel3"/>
+      <set gradient2color="gradientsel3"/>
+      <set gradient3color="gradientsel4"/>
+      <set gradient4color="gradientsel4"/>
+      <gradientrect x1="1LS" y1="HEIGHT/2" x2="WIDTH-1LS" y2="HEIGHT-1LS"/>
+      <fillrect x1="1LS" y1="HEIGHT/2" x2="WIDTH-1LS" y2="HEIGHT-1LS"/>
+      <set fillstyle="solid"/>
+    </style>
+  </element>
+
+  <element name="scrollbarButtonLeft">
+    <style>
+      <drawelem name="scrollbarButtonBorder" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+      <if state="PRESSED">
+        <drawelem name="scrollbarHorizontalButtonBackgroundPressed" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+        <set imageid="arrowLeftBitmap"/>
+        <set drawmode="alphablend"/>
+        <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="4" dy="3" dw="11" dh="11"/>
+      </if>
+      <if state="not PRESSED">
+        <drawelem name="scrollbarHorizontalButtonBackground" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+        <set imageid="arrowLeftBitmap"/>
+        <set drawmode="alphablend"/>
+        <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="3" dy="2" dw="11" dh="11"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="scrollbarButtonRight">
+    <style>
+      <drawelem name="scrollbarButtonBorder" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+      <if state="PRESSED">
+        <drawelem name="scrollbarHorizontalButtonBackgroundPressed" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+        <set imageid="arrowRightBitmap"/>
+        <set drawmode="alphablend"/>
+        <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="3" dy="3" dw="11" dh="11"/>
+      </if>
+      <if state="not PRESSED">
+        <drawelem name="scrollbarHorizontalButtonBackground" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+        <set imageid="arrowRightBitmap"/>
+        <set drawmode="alphablend"/>
+        <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="2" dy="2" dw="11" dh="11"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="scrollbarButtonUp">
+    <style>
+      <drawelem name="scrollbarButtonBorder" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+      <if state="PRESSED">
+        <drawelem name="scrollbarVerticalButtonBackgroundPressed" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+        <set imageid="arrowUpBitmap"/>
+        <set drawmode="alphablend"/>
+        <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="4" dy="4" dw="11" dh="11"/>
+      </if>
+      <if state="not PRESSED">
+        <drawelem name="scrollbarVerticalButtonBackground" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+        <set imageid="arrowUpBitmap"/>
+        <set drawmode="alphablend"/>
+        <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="3" dy="3" dw="11" dh="11"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="scrollbarButtonDown">
+    <style>
+      <drawelem name="scrollbarButtonBorder" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+      <if state="PRESSED">
+        <drawelem name="scrollbarVerticalButtonBackgroundPressed" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+        <set imageid="arrowDownBitmap"/>
+        <set drawmode="alphablend"/>
+        <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="4" dy="3" dw="11" dh="11"/>
+      </if>
+      <if state="not PRESSED">
+        <drawelem name="scrollbarVerticalButtonBackground" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+        <set imageid="arrowDownBitmap"/>
+        <set drawmode="alphablend"/>
+        <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="3" dy="2" dw="11" dh="11"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="horzScrollbar">
+    <style>
+      <drawelem name="scrollbarButtonBorder" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+      <if state="PRESSED">
+        <drawelem name="scrollbarHorizontalButtonBackgroundPressed" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      </if>
+      <if state="not PRESSED">
+        <drawelem name="scrollbarHorizontalButtonBackground" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      </if>
+
+      <set imageid="scrollRibbonHorzBitmap"/>
+      <set drawmode="alphablend"/>
+      <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="WIDTH/2-4" dy="4" dw="8" dh="8"/>
+
+      <if state="FOCUSED">
+        <set color="focusColor"/>
+        <set drawmode="alphablend"/>
+        <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT" r="2LS"/>
+        <set drawmode="replace"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="vertScrollbar">
+    <style>
+      <drawelem name="scrollbarButtonBorder" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+      <if state="PRESSED">
+        <drawelem name="scrollbarVerticalButtonBackgroundPressed" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      </if>
+      <if state="not PRESSED">
+        <drawelem name="scrollbarVerticalButtonBackground" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      </if>
+
+      <set imageid="scrollRibbonBitmap"/>
+      <set drawmode="alphablend"/>
+      <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="4" dy="HEIGHT/2-4" dw="8" dh="8"/>
+
+      <if state="FOCUSED">
+        <set color="focusColor"/>
+        <set drawmode="alphablend"/>
+        <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT" r="2LS"/>
+        <set drawmode="replace"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="listView">
+    <style>
+      <property name="mainfont" value="standard" type="fontid"/>
+      <property name="infofont" value="standard" type="fontid"/>
+      <property name="itemInsets" value="1 1 1 1" type="insets"/>
+      <set color="#39424c"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="colorfieldView">
+    <style>
+      <property name="defaultSize" value="36 36" type="size"/>
+      <set colorproperty="foregroundColor"/>
+      <fillrect x1="2" y1="2" x2="WIDTH-2" y2="HEIGHT-2"/>
+      <drawelem name="border" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="canvasView">
+    <style>
+      <property name="defaultSize" value="32 32" type="size"/>
+    </style>
+  </element>
+
+  <element name="menuView">
+    <style>
+      <property name="font" value="standard" type="fontid"/>
+      <property name="borderInsets" value="5LS 3LS 5LS 3LS" type="insets"/>
+      <property name="itemInsets" value="5 22 2 12" type="insets"/>
+      <property name="shortcutOffset" value="8" type="int"/>
+      <property name="separatorHeight" value="7LS" type="int"/>
+      <property name="iconSize" value="15" type="int"/>
+      <!--
+      <set color="background"/>
+      <fillrect x1="2LS" y1="2LS" x2="WIDTH-2LS" y2="HEIGHT-2LS"/>
+      <drawelem name="borderup" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      -->
+    </style>
+  </element>
+
+  <element name="menuItemSeparator">
+    <style>
+      <set color="border3dmid"/>
+      <drawline x1="0" y1="3LS" x2="WIDTH-1LS" y2="3LS"/>
+      <drawline x1="0" y1="3LS" x2="0" y2="4LS"/>
+      <set color="border3dhigh"/>
+      <drawline x1="0" y1="4LS" x2="WIDTH-1LS" y2="4LS"/>
+      <drawline x1="WIDTH-1LS" y1="3LS" x2="WIDTH-1LS" y2="5LS"/>
+    </style>
+  </element>
+
+  <element name="menuItemBackground">
+    <style>
+      <if state="SELECTED">
+        <set imageid="selectionbitmap"/>
+        <drawimage sx="0" sy="0" sw="1" sh="256" dx="0" dy="0" dw="WIDTH" dh="HEIGHT"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="menuItemCheck">
+    <style>
+      <if state="ENABLED">
+        <if state="SELECTED">
+          <set imageid="checkSelectedBitmap"/>
+          <set drawmode="alphablend"/>
+          <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="2" dy="3" dw="10" dh="10"/>
+        </if>
+        <if state="not SELECTED">
+          <set imageid="checkEnabledBitmap"/>
+          <set drawmode="alphablend"/>
+          <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="2" dy="3" dw="10" dh="10"/>
+        </if>
+      </if>
+      <if state="not ENABLED">
+        <set imageid="checkDisabledBitmap"/>
+        <set drawmode="alphablend"/>
+        <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="2" dy="3" dw="10" dh="10"/>
+      </if>
+
+    </style>
+  </element>
+
+  <element name="treeView">
+    <style>
+      <property name="buttonSize" value="16 16" type="size"/>
+      <property name="font" value="standard" type="fontid"/>
+      <property name="contentInsets" value="0 4 0 0" type="insets"/>
+      <property name="defaultForegroundColor" value="#000000FF" type="color"/>
+      <set color="#000000"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="treeOpenButton">
+    <style>
+      <set color="treeViewLineColor"/>
+      <drawline x1="6" y1="0" x2="6" y2="HEIGHT"/>
+      <drawline x1="6" y1="HEIGHT/2" x2="WIDTH" y2="HEIGHT/2"/>
+
+      <set imageid="treeButtonRightBitmap"/>
+      <set drawmode="alphablend"/>
+      <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="4" dy="2" dw="13" dh="13"/>
+    </style>
+  </element>
+
+  <element name="treeCloseButton">
+    <style>
+      <set color="treeViewLineColor"/>
+      <drawline x1="6" y1="0" x2="6" y2="HEIGHT"/>
+      <drawline x1="6" y1="HEIGHT/2" x2="WIDTH" y2="HEIGHT/2"/>
+
+      <set imageid="treeButtonDownBitmap"/>
+      <set drawmode="alphablend"/>
+      <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="0" dy="6" dw="13" dh="13"/>
+    </style>
+  </element>
+
+  <element name="treeItemLine">
+    <style>
+      <set color="treeViewLineColor"/>
+      <drawline x1="6" y1="0" x2="6" y2="HEIGHT"/>
+      <drawline x1="6" y1="HEIGHT/2" x2="WIDTH" y2="HEIGHT/2"/>
+    </style>
+  </element>
+
+  <element name="treeLine">
+    <style>
+      <set color="treeViewLineColor"/>
+      <drawline x1="6" y1="0" x2="6" y2="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="treeLastItemLine">
+    <style>
+      <set color="treeViewLineColor"/>
+      <drawline x1="6" y1="0" x2="6" y2="HEIGHT/2"/>
+      <drawline x1="6" y1="HEIGHT/2" x2="WIDTH" y2="HEIGHT/2"/>
+    </style>
+  </element>
+
+  <element name="treeLastOpenButton">
+    <style>
+      <set color="treeViewLineColor"/>
+      <drawline x1="6" y1="0" x2="6" y2="HEIGHT/2"/>
+      <drawline x1="6" y1="HEIGHT/2" x2="WIDTH" y2="HEIGHT/2"/>
+
+      <set imageid="treeButtonRightBitmap"/>
+      <set drawmode="alphablend"/>
+      <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="4" dy="2" dw="13" dh="13"/>
+    </style>
+  </element>
+
+  <element name="treeLastCloseButton">
+    <style>
+      <set color="treeViewLineColor"/>
+      <drawline x1="6" y1="0" x2="6" y2="HEIGHT/2"/>
+      <drawline x1="6" y1="HEIGHT/2" x2="WIDTH" y2="HEIGHT/2"/>
+
+      <set imageid="treeButtonDownBitmap"/>
+      <set drawmode="alphablend"/>
+      <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="0" dy="6" dw="13" dh="13"/>
+    </style>
+  </element>
+
+  <element name="fileDialog">
+     <style>
+        <property name="iconFile" value="iconfile1" type="imageid"/>
+        <property name="iconFolder" value="iconfolder1" type="imageid"/>
+        <property name="selecticonFile" value="iconfile1" type="imageid"/>
+        <property name="selecticonFolder" value="iconfolder1" type="imageid"/>
+     </style>
+  </element>
+
+  <element name="comboboxView">
+    <style>
+      <property name="font" value="standard" type="fontid"/>
+      <property name="defaultSize" value="60 23" type="size"/>
+      <property name="borderSize" value="2 2" type="size"/>
+      <property name="knobSize" value="19 23" type="size"/>
+      <property name="textOffsetX" value="3" type="int"/>
+      <property name="textOffsetY" value="2" type="int"/>
+      <property name="textColor" value="#cdd3da" type="color"/>
+      <property name="disabledTextColor" value="disabledTextColor" type="color"/>
+
+      <if state="ENABLED">
+        <set color="#39424c"/>
+      </if>
+      <if state="DISABLED">
+        <set color="disabledBackground"/>
+      </if>
+      <fillrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT" r="3LS"/>
+      <clip x1="0" y1="0" x2="WIDTH" y2="4LS">
+        <set color="#39424c"/>
+        <drawrectrounded x1="0" y1="1LS" x2="WIDTH" y2="9LS" r="3LS"/>
+      </clip>
+
+      <set color="controlBorderColor"/>
+      <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT-1LS" r="3LS"/>
+
+    </style>
+  </element>
+
+  <element name="comboboxKnob">
+    <style>
+
+      <if state="DISABLED">
+        <drawelem name="disabledControlBackground" x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT-2LS"/>
+      </if>
+      <if state="ENABLED">
+        <if state="PRESSED">
+          <drawelem name="pressedControlBackground" x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT-2LS"/>
+        </if>
+        <if state="not PRESSED">
+          <drawelem name="enabledControlBackground" x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT-2LS"/>
+        </if>
+      </if>
+
+      <clip x1="0" y1="0" x2="WIDTH" y2="HEIGHT">
+        <set color="controlBorderColor"/>
+        <drawrectrounded x1="-4LS" y1="0" x2="WIDTH" y2="HEIGHT-1LS" r="3LS"/>
+        <drawline x1="0" y1="1LS" x2="0" y2="HEIGHT-1LS"/>
+      </clip>
+
+      <if state="PRESSED">
+        <set imageid="arrowDownBitmap"/>
+        <set drawmode="alphablend"/>
+        <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="5" dy="5" dw="11" dh="11"/>
+      </if>
+      <if state="not PRESSED">
+        <if state="ENABLED">
+          <set imageid="arrowDownBitmap"/>
+          <set drawmode="alphablend"/>
+          <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="4" dy="4" dw="11" dh="11"/>
+        </if>
+        <if state="DISABLED">
+          <set imageid="arrowDownDisabledBitmap"/>
+          <set drawmode="alphablend"/>
+          <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="4" dy="4" dw="11" dh="11"/>
+        </if>
+      </if>
+
+      <if state="FOCUSED">
+        <set color="focusColor"/>
+        <set drawmode="alphablend"/>
+        <drawrectrounded x1="2LS" y1="2LS" x2="WIDTH-2LS" y2="HEIGHT-3LS" r="2LS"/>
+        <set drawmode="replace"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="comboboxBorderView">
+    <style>
+      <property name="childInsets" value="4 1 4 1" type="insets"/>
+      <set color="background"/>
+
+      <drawrectrounded x1="0" y1="0" x2="WIDTH" y2="HEIGHT" r="3LS"/>
+      <set color="background"/>
+      <fillrectrounded x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT-1LS" r="2LS"/>
+    </style>
+  </element>
+
+  <element name="progressView">
+    <style>
+      <property name="defaultSize" value="100 21" type="size"/>
+      <property name="barInsets" value="3 3 3 3" type="insets"/>
+      <set color="background"/>
+      <fillrect x1="1" y1="1" x2="WIDTH-1" y2="HEIGHT-1"/>
+      <drawelem name="smallBorder" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+    </style>
+  </element>
+
+  <!--
+  <element name="progressBar">
+    <style>
+      <set imageid="selectionbitmap"/>
+      <drawimage sx="0" sy="0" sw="1" sh="256" dx="0" dy="0" dw="WIDTH" dh="HEIGHT"/>
+    </style>
+  </element>
+  -->
+
+  <element name="splitterView">
+    <style>
+      <property name="defaultSize" value="100 100" type="size"/>
+      <property name="splitterSize" value="10 10" type="size"/>
+    </style>
+  </element>
+
+  <element name="vertSplitter">
+    <style>
+      <set color="border3dhigh"/>
+      <fillrect x1="0" y1="0" x2="1" y2="HEIGHT"/>
+
+      <set color="background"/>
+
+      <fillrect x1="1" y1="0" x2="WIDTH-1" y2="HEIGHT"/>
+      <set color="background"/>
+      <fillrect x1="WIDTH-1" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+      <set imageid="splitterPattern"/>
+      <set drawmode="alphablend"/>
+      <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="1" dy="0" dw="WIDTH-3" dh="HEIGHT" scalex="repeat" scaley="repeat"/>
+    </style>
+  </element>
+
+  <element name="horzSplitter">
+    <style>
+      <set color="background"/>
+      <!--<drawline x1="0" y1="0" x2="WIDTH" y2="0"/>-->
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="1"/>
+      <set color="background"/>
+      <fillrect x1="0" y1="1" x2="WIDTH" y2="HEIGHT-1"/>
+      <set color="background"/>
+      <fillrect x1="0" y1="HEIGHT-1" x2="WIDTH" y2="HEIGHT"/>
+      <set imageid="splitterPattern"/>
+      <set drawmode="alphablend"/>
+      <drawimage sx="0" sy="0" sw="BMWIDTH" sh="BMHEIGHT" dx="0" dy="1" dw="WIDTH" dh="6" scalex="repeat" scaley="repeat"/>
+    </style>
+  </element>
+
+  <element name="splitterTopCenter">
+    <style>
+      <set color="background"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      <set color="background"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="1"/>
+      <set color="background"/>
+      <fillrect x1="WIDTH-1" y1="HEIGHT-1" x2="WIDTH" y2="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="splitterBottomCenter">
+    <style>
+      <set color="background"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      <set color="background"/>
+      <fillrect x1="0" y1="HEIGHT-1" x2="WIDTH" y2="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="splitterLeftCenter">
+    <style>
+      <set color="background"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      <set color="background"/>
+      <fillrect x1="0" y1="0" x2="1" y2="HEIGHT"/>
+      <set color="background"/>
+      <fillrect x1="WIDTH-1" y1="HEIGHT-1" x2="WIDTH" y2="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="splitterRightCenter">
+    <style>
+      <set color="background"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      <set color="background"/>
+      <fillrect x1="0" y1="0" x2="1" y2="1"/>
+      <set color="background"/>
+      <fillrect x1="WIDTH-1" y1="0" x2="WIDTH" y2="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="splitterQuadCenter">
+    <style>
+      <set color="background"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+      <set color="background"/>
+      <fillrect x1="0" y1="0" x2="1" y2="1"/>
+      <set color="background"/>
+      <fillrect x1="WIDTH-1" y1="HEIGHT-1" x2="WIDTH" y2="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="toolButton">
+    <style>
+      <property name="defaultSize" value="80 22" type="size"/>
+
+      <set fontid="button"/>
+      <set colorproperty="foregroundColor"/>
+
+      <if state="ENABLED">
+        <set color="#b0bec4"/> <!-- custom text color for disabled -->
+        <printtext x="25LS" y="HEIGHT/2" property="title" halign="left" valign="middle"/>
+
+        <if state="SELECTED">
+          <drawelem name="smallBorder" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+        </if>
+        <if state="not SELECTED">
+          <if state="MOUSE_OVER">
+            <drawelem name="smallborderup" x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+          </if>
+        </if>
+      </if>
+      <if state="DISABLED">
+        <set saturation="30"/> <!-- change the saturation :) -->
+        <set color="#798087"/> <!-- custom text color for disabled -->
+        <printtext x="25LS" y="HEIGHT/2" property="title" halign="left" valign="middle"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="keysettingView">
+    <style>
+      <property name="font" value="standard" type="fontid"/>
+    </style>
+  </element>
+
+  <element name="menubarView">
+    <style>
+      <property name="defaultSize" value="80 22" type="size"/>
+      <property name="itemInsets" value="0 2 0 2" type="insets"/>
+
+      <set fillstyle="gradient"/>
+      <set gradient1color="#39424c"/>
+      <set gradient2color="#39424c"/>
+      <set gradient3color="#39424c"/>
+      <set gradient4color="#39424c"/>
+      <gradientrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT-2LS"/>
+      <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT-2LS"/>
+      <set fillstyle="solid"/>
+
+      <set color="#23262a"/>
+      <drawline x1="0" y1="HEIGHT-2LS" x2="WIDTH" y2="HEIGHT-2LS"/>
+      <set color="#23262a"/>
+      <drawline x1="0" y1="HEIGHT-1LS" x2="WIDTH" y2="HEIGHT-1LS"/>
+
+      </style>
+  </element>
+
+  <element name="menubarMenu">
+    <style>
+      <property name="itemInsets" value="0 8 0 8" type="insets"/>
+      <property name="font" value="standard" type="fontid"/>
+
+      <set fontid="standard"/>
+      <if state="PRESSED">
+        <set color="#cdd3da"/>
+        <drawrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
+
+        <set fillstyle="gradient"/>
+        <!--
+        <set gradient1color="gradientsel1"/>
+        <set gradient2color="gradientsel1"/>
+        <set gradient3color="gradientsel2"/>
+        <set gradient4color="gradientsel2"/>
+        <gradientrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT/2"/>
+
+        <fillrect x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT/2"/>
+        -->
+
+        <set gradient1color="gradientsel3"/>
+        <set gradient2color="gradientsel3"/>
+        <set gradient3color="gradientsel4"/>
+        <set gradient4color="gradientsel4"/>
+        <gradientrect x1="0" y1="HEIGHT/2" x2="WIDTH" y2="HEIGHT"/>
+        <fillrect x1="1LS" y1="1LS" x2="WIDTH-1LS" y2="HEIGHT"/>
+
+        <set fillstyle="solid"/>
+        <set color="background"/>
+        <printtext x="9" y="HEIGHT/2+1" property="title" halign="left" valign="middle"/>
+
+
+
+      </if>
+      <if state="not PRESSED">
+        <set color="#cdd3da"/>
+        <printtext x="8" y="HEIGHT/2" property="title" halign="left" valign="middle"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="tableHeading">
+    <style>
+      <set fillstyle="gradient"/>
+
+      <set gradient1color="gradient1"/>
+      <set gradient2color="gradient1"/>
+      <set gradient3color="gradient2"/>
+      <set gradient4color="gradient2"/>
+      <gradientrect x1="1" y1="1" x2="WIDTH-1" y2="HEIGHT/2"/>
+      <fillrect x1="1" y1="1" x2="WIDTH-1" y2="HEIGHT/2"/>
+
+      <set gradient1color="gradient3"/>
+      <set gradient2color="gradient3"/>
+      <set gradient3color="gradient4"/>
+      <set gradient4color="gradient4"/>
+      <gradientrect x1="1" y1="HEIGHT/2" x2="WIDTH-1" y2="HEIGHT"/>
+      <fillrect x1="1" y1="HEIGHT/2" x2="WIDTH-1" y2="HEIGHT"/>
+
+      <set color="#cdd3da"/>
+      <drawlineex x1="1" y1="HEIGHT-1" x2="WIDTH" y2="HEIGHT-1"/>
+      <drawlineex x1="WIDTH-1" y1="1" x2="WIDTH-1" y2="HEIGHT-1"/>
+
+      <set color="#cdd3da"/>
+      <set fontid="standard"/>
+      <textout x="WIDTH/2" y="HEIGHT/2" method="centeredTitle"/>
+    </style>
+  </element>
+
+  <element name="tableView">
+    <style>
+      <property name="headingFont" value="standard" type="fontid"/>
+      <property name="headingInsets" value="2 2 2 2" type="insets"/>
+      <property name="itemInsets" value="2 2 2 2" type="insets"/>
+      <property name="defaultForegroundColor" value="#background" type="color"/>
+      <property name="defaultBackgroundColor" value="#background" type="color"/>
+      <property name="lineColor" value="#background" type="color"/>
+      <property name="remainFillColor" value="#00000" type="color"/>
+    </style>
+  </element>	
+
+</skin>

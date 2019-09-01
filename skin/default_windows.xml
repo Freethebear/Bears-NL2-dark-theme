@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<skin version="0.2">
+
+  <image id="bitmap0" value="gui0.png"/>
+  <image id="iconfile1" value="filesmall.png"/>
+  <image id="iconfolder1" value="foldersmall.png"/>
+  <image id="shadow1" value="shadow1.png"/>
+  <image id="window_shadow" value="window_shadow.png"/>
+  <image id="farbverlauf_window" value="farbverlauf_window.png"/>
+  <image id="selectionbitmap" value="selection.png"/>
+  <image id="scrollbarbuttons" value="scrollbar1.png"/>
+
+  <!-- <font id="standard" value="newfont.nlfont"/> -->
+  <font id="standard" value="Tahoma_13pix_8pt.nlfont"/>
+  <font id="button" value="Microsoft Sans Serif_13pix_8pt.nlfont"/>
+  <font id="title" value="Tahoma_13pix_8pt_bold.nlfont"/>
+  <font id="larger" value="Tahoma_13pix_8pt_bold.nlfont"/>
+
+  <color id="background" value="#000000"/>
+  <color id="border3dhigh" value="#000000"/>
+  <color id="border3dmid" value="#000000"/>
+  <color id="border3dlow" value="#000000"/>
+  <color id="border3dlowest" value="#000000FF"/>
+  <color id="textcolor" value="#000000FF"/>
+  <color id="selectioncolor" value="#B5D5FFFF"/>
+  <color id="focuscolor" value="#5E93FDC0"/>
+
+  <element name="window">
+    <style>
+      <property name="updateTitleOnActivationChange" value="true" type="bool"/>              
+      <property name="clientBorder" value="20 1 1 1" type="insets"/>
+
+      <property name="resizeButtonOriginX" value="right" type="string"/>
+      <property name="resizeButtonOriginY" value="bottom" type="string"/>       
+      <property name="resizeButtonRect" value="-18 -18 16 16" type="rect"/>
+
+      <property name="closeButtonOriginX" value="right" type="string"/>
+      <property name="closeButtonOriginY" value="top" type="string"/>       
+      <property name="closeButtonRect" value="-18 1 17 18" type="rect"/>
+
+      <property name="shadowInsets" value="10 10 20 20" type="insets"/>       
+
+      <set imageid="window_shadow"/>
+
+      <drawimage sx="0" sy="80" sw="30" sh="30" dx="-10" dy="HEIGHT-10"/>
+      <drawimage sx="70" sy="70" sw="40" sh="40" dx="WIDTH-20" dy="HEIGHT-20"/>
+      <drawimage sx="40" sy="80" sw="1" sh="30" dx="20" dy="HEIGHT-10" dw="WIDTH-40"/>
+      <drawimage sx="0" sy="0" sw="20" sh="30" dx="-10" dy="-10"/>
+      <drawimage sx="0" sy="60" sw="20" sh="1" dx="-10" dy="20" dh="HEIGHT-30"/>
+      <drawimage sx="80" sy="0" sw="30" sh="30" dx="WIDTH-10" dy="-10"/>
+      <drawimage sx="20" sy="0" sw="1" sh="30" dx="10" dy="-10" dw="WIDTH-20"/>
+      <drawimage sx="80" sy="30" sw="30" sh="1" dx="WIDTH-10" dy="20" dh="HEIGHT-40"/>
+
+      <set colorid="background"/>
+      <fillrect x="10" y="20" w="WIDTH-20" h="HEIGHT-30"/>
+
+      <set fontid="title"/>
+      <clip x="5" y="0" w="WIDTH-8" h="HEIGHT">
+        <set color="#FFFFFFFF"/>
+        <printtext x="10" y="2" property="title" halign="left" valign="top"/>
+      </clip>
+    </style>
+  </element>
+  
+  <element name="windowNoBorder">
+    <style>
+       <property name="shadowInsets" value="5 4 14 12" type="insets"/>
+       <set colorid="background"/>
+       <fillrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+    </style>
+  </element>
+  
+  <element name="windowNoBorderShadow">
+    <style>
+      <set imageid="shadow1"/>
+      <drawimage sx="0" sy="0" sw="18" sh="5" dx="-4" dy="-5"/>
+      <drawimage sx="0" sy="5" sw="4" sh="22" dx="-4" dy="0"/>
+
+      <drawimage sx="50" sy="0" sw="12" sh="5" dx="WIDTH" dy="-5"/>
+      <drawimage sx="50" sy="5" sw="12" sh="16" dx="WIDTH" dy="0"/>
+      <drawimage sx="44" sy="0" sw="6" sh="5" dx="WIDTH-6" dy="-5"/>
+
+      <drawimage sx="50" sy="44" sw="12" sh="14" dx="WIDTH" dy="HEIGHT"/>
+      <drawimage sx="50" sy="38" sw="12" sh="6" dx="WIDTH" dy="HEIGHT-6"/>
+      <drawimage sx="44" sy="44" sw="6" sh="14" dx="WIDTH-6" dy="HEIGHT"/>
+
+      <drawimage sx="0" sy="44" sw="4" sh="14" dx="-4" dy="HEIGHT"/>
+      <drawimage sx="4" sy="44" sw="16" sh="14" dx="0" dy="HEIGHT"/>
+      <drawimage sx="0" sy="40" sw="4" sh="4" dx="-4" dy="HEIGHT-4"/>
+
+      <drawimage sx="20" sy="44" sw="23" sh="14" dx="16" dy="HEIGHT" dw="WIDTH-22"/>
+      <drawimage sx="50" sy="21" sw="12" sh="16" dx="WIDTH" dy="16" dh="HEIGHT-22"/>
+      <drawimage sx="20" sy="0" sw="22" sh="5" dx="14" dy="-5" dw="WIDTH-20"/>
+      <drawimage sx="0" sy="22" sw="4" sh="16" dx="-4" dy="17" dh="HEIGHT-21"/>    
+    </style>
+  </element>
+  
+  <element name="windowTooltip">
+    <style>
+      <property name="font" value="standard" type="fontid"/>
+
+      <property name="shadowInsets" value="5 4 14 12" type="insets"/>
+      <property name="tooltipInsets" value="2 4 3 4" type="insets"/>
+
+      <set color="#FFFFE1FF"/>
+      <fillrect x="1" y="1" w="WIDTH-2" h="HEIGHT-2"/>
+      <set color="#000000FF"/>
+      <drawrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+      <set fontid="standard"/>
+      <printtext x="4" y="2" property="title" halign="left" valign="top"/>    
+    </style>
+  </element>
+  
+  <element name="windowTooltipShadow">
+    <style>
+      <set imageid="shadow1"/>
+      <drawimage sx="0" sy="0" sw="18" sh="5" dx="-4" dy="-5"/>
+      <drawimage sx="0" sy="5" sw="4" sh="22" dx="-4" dy="0"/>
+
+      <drawimage sx="50" sy="0" sw="12" sh="5" dx="WIDTH" dy="-5"/>
+      <drawimage sx="50" sy="5" sw="12" sh="16" dx="WIDTH" dy="0"/>
+      <drawimage sx="44" sy="0" sw="6" sh="5" dx="WIDTH-6" dy="-5"/>
+
+      <drawimage sx="50" sy="44" sw="12" sh="14" dx="WIDTH" dy="HEIGHT"/>
+      <drawimage sx="50" sy="38" sw="12" sh="6" dx="WIDTH" dy="HEIGHT-6"/>
+      <drawimage sx="44" sy="44" sw="6" sh="14" dx="WIDTH-6" dy="HEIGHT"/>
+
+      <drawimage sx="0" sy="44" sw="4" sh="14" dx="-4" dy="HEIGHT"/>
+      <drawimage sx="4" sy="44" sw="16" sh="14" dx="0" dy="HEIGHT"/>
+      <drawimage sx="0" sy="40" sw="4" sh="4" dx="-4" dy="HEIGHT-4"/>
+
+      <drawimage sx="20" sy="44" sw="23" sh="14" dx="16" dy="HEIGHT" dw="WIDTH-22"/>
+      <drawimage sx="50" sy="21" sw="12" sh="16" dx="WIDTH" dy="16" dh="HEIGHT-22"/>
+      <drawimage sx="20" sy="0" sw="22" sh="5" dx="14" dy="-5" dw="WIDTH-20"/>
+      <drawimage sx="0" sy="22" sw="4" sh="16" dx="-4" dy="17" dh="HEIGHT-21"/>    
+    </style>
+  </element>
+
+  <element name="windowResizeButton">
+    <style>
+      <set imageid="bitmap0"/>
+      <set drawmode="alphablend"/>
+      <drawimage sx="0" sy="54" sw="16" sh="16" dx="0" dy="0"/>
+    </style>
+  </element>
+  
+  <element name="windowCloseButton">
+    <style>    
+      <set imageid="bitmap0"/>
+      <set drawmode="alphablend"/>
+      <if state="MOUSE_OVER">
+        <drawimage sx="18" sy="127" sw="17" sh="18" dx="0" dy="0"/>
+      </if>
+      <if state="not MOUSE_OVER">
+        <drawimage sx="0" sy="127" sw="17" sh="18" dx="0" dy="0"/>
+      </if>    
+    </style>
+  </element>
+
+  <element name="selection">
+    <style>
+      <set imageid="selectionbitmap"/>
+      <drawimage sx="0" sy="0" sw="1" sh="256" dx="0" dy="0" dw="WIDTH" dh="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="border">
+    <style>
+      <property name="childInsets" value="2 2 2 2" type="insets"/>
+      <set colorid="border3dmid"/>
+      <drawline x1="0" y1="0" x2="WIDTH-1" y2="0"/>
+      <drawline x1="0" y1="0" x2="0" y2="HEIGHT-1"/>
+      <set colorid="border3dhigh"/>
+      <drawline x1="0" y1="HEIGHT-1" x2="WIDTH-1" y2="HEIGHT-1"/>
+      <drawline x1="WIDTH-1" y1="0" x2="WIDTH-1" y2="HEIGHT"/>
+      <set colorid="border3dlow"/>
+      <drawline x1="1" y1="1" x2="WIDTH-2" y2="1"/>
+      <drawline x1="1" y1="1" x2="1" y2="HEIGHT-2"/>
+      <set colorid="background"/>
+      <drawline x1="1" y1="HEIGHT-2" x2="WIDTH-2" y2="HEIGHT-2"/>
+      <drawline x1="WIDTH-2" y1="1" x2="WIDTH-2" y2="HEIGHT-1"/>
+    </style>
+  </element>
+
+  <element name="borderup">
+    <style>
+      <set colorid="border3dhigh"/>
+      <drawline x1="1" y1="1" x2="WIDTH-2" y2="1"/>
+      <drawline x1="1" y1="2" x2="1" y2="HEIGHT-2"/>   
+      <set colorid="border3dlow"/>
+      <drawline x1="0" y1="HEIGHT-1" x2="WIDTH" y2="HEIGHT-1"/>
+      <drawline x1="WIDTH-1" y1="0" x2="WIDTH-1" y2="HEIGHT-1"/>
+      <set colorid="border3dmid"/>
+      <drawline x1="1" y1="HEIGHT-2" x2="WIDTH-1" y2="HEIGHT-2"/>
+      <drawline x1="WIDTH-2" y1="1" x2="WIDTH-2" y2="HEIGHT-2"/>
+    </style>
+  </element>
+
+  <element name="smallBorder">
+    <style>
+      <property name="childInsets" value="1 1 1 1" type="insets"/>
+      <set colorid="border3dmid"/>
+      <drawline x1="0" y1="0" x2="WIDTH-1" y2="0"/>
+      <drawline x1="0" y1="0" x2="0" y2="HEIGHT-1"/>
+      <set colorid="border3dhigh"/>
+      <drawline x1="0" y1="HEIGHT-1" x2="WIDTH-1" y2="HEIGHT-1"/>
+      <drawline x1="WIDTH-1" y1="0" x2="WIDTH-1" y2="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="smallborderup">
+    <style>
+      <set colorid="border3dhigh"/>
+      <drawline x1="0" y1="0" x2="WIDTH-1" y2="0"/>
+      <drawline x1="0" y1="0" x2="0" y2="HEIGHT-1"/>
+      <set colorid="border3dmid"/>
+      <drawline x1="0" y1="HEIGHT-1" x2="WIDTH-1" y2="HEIGHT-1"/>
+      <drawline x1="WIDTH-1" y1="0" x2="WIDTH-1" y2="HEIGHT"/>
+    </style>
+  </element>
+  
+  <element name="buttonborder">
+    <style>
+      <set colorid="border3dhigh"/>
+      <drawline x1="0" y1="0" x2="WIDTH-1" y2="0"/>
+      <drawline x1="0" y1="0" x2="0" y2="HEIGHT-1"/>
+      <set colorid="border3dlow"/>
+      <drawline x1="0" y1="HEIGHT-1" x2="WIDTH" y2="HEIGHT-1"/>
+      <drawline x1="WIDTH-1" y1="0" x2="WIDTH-1" y2="HEIGHT-1"/>
+      <set colorid="border3dmid"/>
+      <drawline x1="1" y1="HEIGHT-2" x2="WIDTH-1" y2="HEIGHT-2"/>
+      <drawline x1="WIDTH-2" y1="1" x2="WIDTH-2" y2="HEIGHT-2"/>    
+    </style>
+  </element>
+
+  <element name="gridView">
+    <style>
+      <property name="defaultSize" value="50 50" type="size"/>
+    </style>
+  </element>
+
+  <element name="horizontalLine">
+    <style>
+      <property name="defaultSize" value="100 2" type="size"/>
+      <set colorid="border3dmid"/>
+      <drawline x1="0" y1="0" x2="WIDTH-1" y2="0"/>
+      <drawline x1="0" y1="0" x2="0" y2="1"/>
+      <set colorid="border3dhigh"/>
+      <drawline x1="0" y1="1" x2="WIDTH-1" y2="1"/>
+      <drawline x1="WIDTH-1" y1="0" x2="WIDTH-1" y2="2"/>
+    </style>
+  </element>
+
+  <element name="labelView">
+    <style>
+      <property name="font" value="standard" type="fontid"/>
+      <property name="defaultSize" value="100 20" type="size"/>
+      <property name="defaultForegroundColor" value="#000000FF" type="color"/>
+            
+      <if state="ENABLED">      
+        <set colorproperty="foregroundColor"/>
+        <textout x="0" y="0" method="label"/>
+      </if>
+      <if state="DISABLED">
+        <set colorid="border3dhigh"/>
+        <textout x="1" y="1" method="label"/>
+        <set colorid="border3dmid"/>
+        <textout x="0" y="0" method="label"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="buttonView">
+    <style>
+      <property name="defaultSize" value="80 24" type="size"/>
+      <property name="defaultForegroundColor" value="#000000FF" type="color"/>
+
+      <set imageid="farbverlauf_window"/>
+      <drawimage sx="0" sy="0" sw="256" sh="256" dx="1" dy="1" dh="HEIGHT-2" dw="WIDTH-2"/>
+
+      <if state="ENABLED">
+        <if state="PRESSED">
+          <set colorid="border3dmid"/>
+          <drawrect x="1" y="1" w="WIDTH-2" h="HEIGHT-2"/>
+          <set colorid="border3dlowest"/>
+          <drawrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+          <set fontid="button"/>
+          <set colorproperty="foregroundColor"/>
+          <textout x="WIDTH/2+1" y="HEIGHT/2+1" method="centeredTitle"/>
+        </if>
+        <if state="not PRESSED">
+          <if state="DEFAULT">
+            <set colorid="border3dhigh"/>
+            <drawline x1="1" y1="1" x2="WIDTH-2" y2="1"/>
+            <drawline x1="1" y1="HEIGHT-3" x2="1" y2="1"/>   
+            <set colorid="border3dlow"/>
+            <drawline x1="1" y1="HEIGHT-2" x2="WIDTH-1" y2="HEIGHT-2"/>
+            <drawline x1="WIDTH-2" y1="HEIGHT-3" x2="WIDTH-2" y2="0"/>
+            <set colorid="border3dmid"/>
+            <drawline x1="2" y1="HEIGHT-3" x2="WIDTH-3" y2="HEIGHT-3"/>
+            <drawline x1="WIDTH-3" y1="HEIGHT-3" x2="WIDTH-3" y2="1"/>
+            <set colorid="border3dlowest"/>
+            <drawrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+            <set fontid="button"/>
+            <set colorproperty="foregroundColor"/>
+            <textout x="WIDTH/2" y="HEIGHT/2" method="centeredTitle"/>
+          </if>
+          <if state="not DEFAULT">
+            <set colorid="border3dhigh"/>
+            <drawline x1="0" y1="0" x2="WIDTH-1" y2="0"/>
+            <drawline x1="0" y1="1" x2="0" y2="HEIGHT-1"/>   
+            <set colorid="border3dlow"/>
+            <drawline x1="0" y1="HEIGHT-1" x2="WIDTH" y2="HEIGHT-1"/>
+            <drawline x1="WIDTH-1" y1="0" x2="WIDTH-1" y2="HEIGHT-1"/>
+            <set colorid="border3dmid"/>
+            <drawline x1="1" y1="HEIGHT-2" x2="WIDTH-1" y2="HEIGHT-2"/>
+            <drawline x1="WIDTH-2" y1="1" x2="WIDTH-2" y2="HEIGHT-2"/>
+            <set fontid="button"/>
+            <set colorproperty="foregroundColor"/>
+            <textout x="WIDTH/2" y="HEIGHT/2" method="centeredTitle"/>
+          </if>
+        </if>
+      </if>
+      <if state="DISABLED">
+        <if state="PRESSED">
+          <set colorid="border3dmid"/>
+          <drawrect x="1" y="1" w="WIDTH-2" h="HEIGHT-2"/>
+          <set colorid="border3dlowest"/>
+          <drawrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+          <set color="#9C9C9CFF"/>
+          <set fontid="button"/>
+          <set colorid="border3dhigh"/>
+          <textout x="WIDTH/2+2" y="HEIGHT/2+2" method="centeredTitle"/>
+          <set colorid="border3dmid"/>
+          <textout x="WIDTH/2+1" y="HEIGHT/2+1" method="centeredTitle"/>
+        </if>
+        <if state="not PRESSED">
+          <set colorid="border3dhigh"/>
+          <drawline x1="0" y1="0" x2="WIDTH-1" y2="0"/>
+          <drawline x1="0" y1="1" x2="0" y2="HEIGHT-1"/>   
+          <set colorid="border3dlow"/>
+          <drawline x1="0" y1="HEIGHT-1" x2="WIDTH" y2="HEIGHT-1"/>
+          <drawline x1="WIDTH-1" y1="0" x2="WIDTH-1" y2="HEIGHT"/>
+          <set colorid="border3dmid"/>
+          <drawline x1="1" y1="HEIGHT-2" x2="WIDTH-1" y2="HEIGHT-2"/>
+          <drawline x1="WIDTH-2" y1="HEIGHT-3" x2="WIDTH-2" y2="0"/>
+          <set fontid="button"/>
+          <set colorid="border3dhigh"/>
+          <textout x="WIDTH/2+1" y="HEIGHT/2+1" method="centeredTitle"/>
+          <set colorid="border3dmid"/>
+          <textout x="WIDTH/2" y="HEIGHT/2" method="centeredTitle"/>
+        </if>
+      </if>
+    </style>
+  </element>
+
+  <element name="radioButtonView">
+    <style>
+      <property name="defaultSize" value="24 24" type="size"/>
+      <property name="defaultForegroundColor" value="#000000FF" type="color"/>
+      <property name="buttonSize" value="16 16" type="size"/>
+
+      <set fontid="standard"/> 
+
+      <if state="ENABLED">
+        <if state="PRESSED">
+          <set imageid="bitmap0"/>
+          <set drawmode="alphablend"/>
+          <drawimage sx="34" sy="110" sw="16" sh="16" dx="0" dy="1"/>
+          <set drawmode="replace"/>
+        </if>
+        <if state="not PRESSED">
+          <if state="SELECTED">
+            <set imageid="bitmap0"/>
+            <set drawmode="alphablend"/>
+            <drawimage sx="0" sy="110" sw="16" sh="16" dx="0" dy="1"/>
+            <set drawmode="replace"/>
+          </if>
+          <if state="not SELECTED">
+            <set imageid="bitmap0"/>
+            <set drawmode="alphablend"/>
+            <drawimage sx="17" sy="110" sw="16" sh="16" dx="0" dy="1"/>
+            <set drawmode="replace"/>
+          </if>
+        </if>
+        <set fontid="standard"/>
+        <set colorproperty="foregroundColor"/>
+        <textout x="19" y="2" method="title"/>
+      </if>
+      <if state="DISABLED">
+        <set imageid="bitmap0"/>
+        <set drawmode="alphablend"/>
+        <drawimage sx="34" sy="110" sw="16" sh="16" dx="0" dy="1"/>
+        <set drawmode="replace"/>
+        <set colorid="border3dhigh"/>
+        <textout x="20" y="3" method="title"/>
+        <set colorid="border3dmid"/>
+        <textout x="19" y="2" method="title"/>
+      </if>
+    </style>
+  </element>
+  
+  <element name="tabView">
+    <style>
+      <property name="font" value="standard" type="fontid"/>
+      <property name="minTabWidth" value="20" type="int"/>
+      <property name="tabOffsetX" value="0" type="int"/>
+      <property name="childInsets" value="23 2 2 2" type="insets"/>
+
+      <set colorid="background"/>
+      <drawline x1="0" y1="22" x2="0" y2="HEIGHT-1"/>
+      <drawline x1="1" y1="22" x2="WIDTH-1" y2="22"/>
+
+      <set colorid="border3dhigh"/>
+      <drawline x1="1" y1="23" x2="1" y2="HEIGHT-2"/>
+      <drawline x1="2" y1="23" x2="WIDTH-2" y2="23"/>
+
+      <set colorid="border3dmid"/>
+      <drawline x1="WIDTH-2" y1="23" x2="WIDTH-2" y2="HEIGHT-2"/>
+      <drawline x1="1" y1="HEIGHT-2" x2="WIDTH-1" y2="HEIGHT-2"/>
+
+      <set colorid="border3dlowest"/>
+      <drawline x1="WIDTH-1" y1="22" x2="WIDTH-1" y2="HEIGHT-1"/>
+      <drawline x1="0" y1="HEIGHT-1" x2="WIDTH" y2="HEIGHT-1"/>
+    </style>
+  </element>
+
+  <element name="tab">
+    <style>
+      <if state="not SELECTED">
+        <if state="PRESSED">
+          <set color="#CCC8C0FF"/>
+          <fillrect x="4" y="3" w="WIDTH-4" h="HEIGHT-4"/>
+        </if>
+
+        <set colorid="border3dhigh"/>
+        <drawline x1="3" y1="4" x2="3" y2="HEIGHT-1"/>
+        <drawline x1="4" y1="3" x2="5" y2="3"/>
+        <drawline x1="5" y1="2" x2="WIDTH" y2="2"/>
+        <set colorid="border3dmid"/>
+        <drawline x1="WIDTH" y1="2" x2="WIDTH" y2="HEIGHT-1"/>
+
+        <set colorid="border3dlowest"/>
+        <drawline x1="WIDTH+1" y1="4" x2="WIDTH+1" y2="HEIGHT-1"/>
+        <set colorid="textcolor"/>
+        <set fontid="standard"/>
+        <textout x="10" y="6" method="title"/>
+      </if>
+      <if state="SELECTED">
+        <set colorid="border3dhigh"/>
+        <drawline x1="1" y1="2" x2="1" y2="HEIGHT+1"/>
+        <drawline x1="2" y1="1" x2="3" y2="1"/>
+        <drawline x1="3" y1="0" x2="WIDTH+1" y2="0"/>
+
+        <set colorid="border3dmid"/>
+        <drawline x1="WIDTH+1" y1="0" x2="WIDTH+1" y2="HEIGHT+1"/>
+
+        <set colorid="border3dlowest"/>
+        <drawline x1="WIDTH+2" y1="2" x2="WIDTH+2" y2="HEIGHT+1"/>
+
+        <set colorid="background"/>
+        <drawline x1="2" y1="23" x2="WIDTH+1" y2="23"/>
+
+        <set colorid="textcolor"/>
+        <set fontid="standard"/>
+        <textout x="10" y="4" method="title"/>
+      </if>
+    </style>
+  </element>
+  
+  <element name="imageView">
+    <style>
+    </style>
+  </element>
+
+  <element name="slider">
+    <style>
+      <property name="defaultSize" value="100 21" type="size"/>
+      <property name="knobSize" value="11 21" type="size"/>
+      <drawelem name="border" x="0" y="HEIGHT/2-2" w="WIDTH" h="4"/>
+    </style>
+  </element>
+
+  <element name="sliderKnob">
+    <style>
+      <set colorid="background"/>
+      <fillrect x="1" y="1" w="WIDTH-3" h="HEIGHT-3"/>
+      <drawelem name="buttonborder" x="0" y="0" w="WIDTH" h="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="verticalSlider">
+    <style>
+      <property name="defaultSize" value="21 100" type="size"/>
+      <property name="knobSize" value="21 11" type="size"/>
+      <drawelem name="border" x="WIDTH/2-2" y="0" w="4" h="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="verticalSliderKnob">
+    <style>
+      <set colorid="background"/>
+      <fillrect x="1" y="1" w="WIDTH-3" h="HEIGHT-3"/>
+      <drawelem name="buttonborder" x="0" y="0" w="WIDTH" h="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="textFieldView">
+    <style>
+      <property name="font" value="standard" type="fontid"/>
+      <property name="defaultSize" value="60 22" type="size"/>
+      <property name="defaultForegroundColor" value="#000000FF" type="color"/>
+      <property name="defaultBackgroundColor" value="#FFFFFFFF" type="color"/>
+      <property name="borderWidth" value="2" type="int"/>
+    </style>
+  </element>
+
+  <element name="textFieldReadOnlyBackground">
+    <style>
+      <set colorid="background"/>
+      <fillrect x="0" y="0" w="WIDTH" h="HEIGHT"/>      
+    </style>
+  </element>
+  
+  <element name="textFieldReadOnlyBorder">
+    <style>
+      <drawelem name="smallBorder" x="0" y="0" w="WIDTH" h="HEIGHT"/>
+    </style>
+  </element>
+  
+  <element name="textFieldBackground">
+    <style>  
+      <if state="ENABLED">
+        <set color="#FFFFFFFF"/>
+        <fillrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+      </if>
+      <if state="DISABLED">
+        <set colorid="background"/>
+        <fillrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+      </if>
+    </style>
+  </element>
+  
+  <element name="textFieldBorder">
+    <style>  
+      <drawelem name="border" x="0" y="0" w="WIDTH" h="HEIGHT"/>
+      <if state="FOCUSED">
+        <set colorid="focuscolor"/>
+        <set drawmode="alphablend"/>
+        <drawline x1="0" y1="0" x2="WIDTH-1" y2="0"/>
+        <drawline x1="0" y1="0" x2="0" y2="HEIGHT-1"/>
+        <drawline x1="0" y1="HEIGHT-1" x2="WIDTH-1" y2="HEIGHT-1"/>
+        <drawline x1="WIDTH-1" y1="0" x2="WIDTH-1" y2="HEIGHT"/>
+        <drawline x1="1" y1="1" x2="WIDTH-2" y2="1"/>
+        <drawline x1="1" y1="1" x2="1" y2="HEIGHT-2"/>
+        <drawline x1="1" y1="HEIGHT-2" x2="WIDTH-2" y2="HEIGHT-2"/>
+        <drawline x1="WIDTH-2" y1="1" x2="WIDTH-2" y2="HEIGHT-1"/>
+        <set drawmode="replace"/>
+      </if>
+    </style>
+  </element>  
+  
+  <element name="spinButtonView">
+    <style>
+      <property name="defaultSize" value="13 22" type="size"/>
+    </style>
+  </element>
+  
+  <element name="spinButtonUp">
+    <style>
+      <set imageid="bitmap0"/>
+      <if state="ENABLED">
+        <if state="PRESSED">
+          <drawimage sx="26" sy="149" sw="13" sh="11" dx="0" dy="0"/>
+        </if>
+        <if state="not PRESSED">
+          <drawimage sx="0" sy="149" sw="13" sh="11" dx="0" dy="0"/>
+        </if>
+      </if>
+      <if state="DISABLED">
+        <drawimage sx="13" sy="149" sw="13" sh="11" dx="0" dy="0"/>
+      </if>
+    </style>
+  </element>
+  
+  <element name="spinButtonDown">
+    <style>
+      <set imageid="bitmap0"/>
+      <if state="ENABLED">
+        <if state="PRESSED">
+          <drawimage sx="26" sy="160" sw="13" sh="11" dx="0" dy="0" />
+        </if>
+        <if state="not PRESSED">
+          <drawimage sx="0" sy="160" sw="13" sh="11" dx="0" dy="0" />
+        </if>      
+      </if>
+      <if state="DISABLED">
+        <drawimage sx="13" sy="160" sw="13" sh="11" dx="0" dy="0" />
+      </if>      
+    </style>
+  </element>
+  
+  <element name="checkboxView">
+    <style>
+      <property name="minSize" value="13 13" type="size"/>
+      <property name="buttonSize" value="13 13" type="size"/>
+      <property name="defaultSize" value="60 13" type="size"/>
+      
+      <set imageid="bitmap0"/>      
+      <set fontid="standard"/>      
+            
+      <if state="ENABLED">
+        <if state="SELECTED">
+          <drawimage sx="0" sy="41" sw="13" sh="13" dx="0" dy="0" />
+        </if>
+        <if state="not SELECTED">
+          <drawimage sx="13" sy="41" sw="13" sh="13" dx="0" dy="0" />
+        </if>
+        <set colorid="textcolor"/>
+        <textout x="18" y="0" method="title"/>
+      </if>
+      <if state="DISABLED">
+        <if state="SELECTED">
+          <drawimage sx="26" sy="41" sw="13" sh="13" dx="0" dy="0" />
+        </if>
+        <if state="not SELECTED">
+          <drawimage sx="39" sy="41" sw="13" sh="13" dx="0" dy="0" />
+        </if>
+        <set colorid="border3dhigh"/>
+        <textout x="19" y="1" method="title"/>
+        <set colorid="border3dmid"/>
+        <textout x="18" y="0" method="title"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="scrollView">
+    <style>
+      <property name="scrollbarSize" value="16 16" type="size"/>
+    </style>
+  </element>
+
+  <element name="horzScrollbarBackground">
+    <style>
+      <set color="#E9E7E3FF"/>
+      <fillrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="vertScrollbarBackground">
+    <style>
+      <set color="#E9E7E3FF"/>
+      <fillrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="scrollbarCorner">
+    <style>
+      <set colorid="background"/>
+      <fillrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="scrollbarButtonLeft">
+    <style>
+      <set imageid="scrollbarbuttons"/>
+      <if state="PRESSED">
+        <drawimage sx="96" sy="0" sw="16" sh="16" dx="0" dy="0" />
+      </if>
+      <if state="not PRESSED">
+        <drawimage sx="32" sy="0" sw="16" sh="16" dx="0" dy="0" />
+      </if>
+    </style>
+  </element>
+  
+  <element name="scrollbarButtonRight">
+    <style>
+      <set imageid="scrollbarbuttons"/>
+      <if state="PRESSED">
+        <drawimage sx="112" sy="0" sw="16" sh="16" dx="0" dy="0" />
+      </if>
+      <if state="not PRESSED">
+        <drawimage sx="48" sy="0" sw="16" sh="16" dx="0" dy="0" />
+      </if>
+    </style>
+  </element>
+
+  <element name="scrollbarButtonUp">
+    <style>
+      <set imageid="scrollbarbuttons"/>
+      <if state="PRESSED">
+        <drawimage sx="80" sy="0" sw="16" sh="16" dx="0" dy="0" />
+      </if>
+      <if state="not PRESSED">
+        <drawimage sx="16" sy="0" sw="16" sh="16" dx="0" dy="0" />
+      </if>
+    </style>
+  </element>
+  
+  <element name="scrollbarButtonDown">
+    <style>
+      <set imageid="scrollbarbuttons"/>
+      <if state="PRESSED">
+        <drawimage sx="64" sy="0" sw="16" sh="16" dx="0" dy="0" />
+      </if>
+      <if state="not PRESSED">
+        <drawimage sx="0" sy="0" sw="16" sh="16" dx="0" dy="0" />
+      </if>
+    </style>
+  </element>
+
+  <element name="horzScrollbar">
+    <style>
+      <set colorid="background"/>
+      <fillrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+      <set colorid="border3dhigh"/>
+      <drawline x1="1" y1="1" x2="WIDTH-2" y2="1"/>
+      <drawline x1="1" y1="1" x2="1" y2="HEIGHT-2"/>
+      <set colorid="border3dlow"/>
+      <drawline x1="0" y1="HEIGHT-1" x2="WIDTH" y2="HEIGHT-1"/>
+      <drawline x1="WIDTH-1" y1="0" x2="WIDTH-1" y2="HEIGHT"/>
+      <set colorid="border3dmid"/>
+      <drawline x1="1" y1="HEIGHT-2" x2="WIDTH-1" y2="HEIGHT-2"/>
+      <drawline x1="WIDTH-2" y1="1" x2="WIDTH-2" y2="HEIGHT-1"/>
+    </style>
+  </element>
+
+  <element name="vertScrollbar">
+    <style>
+      <set colorid="background"/>
+      <fillrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+      <set colorid="border3dhigh"/>
+      <drawline x1="1" y1="1" x2="WIDTH-2" y2="1"/>
+      <drawline x1="1" y1="1" x2="1" y2="HEIGHT-2"/>
+      <set colorid="border3dlow"/>
+      <drawline x1="0" y1="HEIGHT-1" x2="WIDTH" y2="HEIGHT-1"/>
+      <drawline x1="WIDTH-1" y1="0" x2="WIDTH-1" y2="HEIGHT"/>
+      <set colorid="border3dmid"/>
+      <drawline x1="1" y1="HEIGHT-2" x2="WIDTH-1" y2="HEIGHT-2"/>
+      <drawline x1="WIDTH-2" y1="1" x2="WIDTH-2" y2="HEIGHT-1"/>
+    </style>
+  </element>
+
+  <element name="listView">
+    <style>
+      <property name="mainfont" value="standard" type="fontid"/>
+      <property name="infofont" value="standard" type="fontid"/>      
+      <property name="itemInsets" value="1 1 1 1" type="insets"/>
+      <set color="#FFFFFFFF"/>
+      <fillrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="colorfieldView">
+    <style>
+      <property name="defaultSize" value="36 36" type="size"/>
+      <set colorproperty="foregroundColor"/>
+      <fillrect x="2" y="2" w="WIDTH-4" h="HEIGHT-4"/>
+      <drawelem name="border" x="0" y="0" w="WIDTH" h="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="canvasView">
+    <style>
+      <property name="defaultSize" value="32 32" type="size"/>
+    </style>
+  </element>
+
+  <element name="menuView">
+    <style>
+      <property name="font" value="standard" type="fontid"/>
+      <property name="borderSize" value="4 4" type="size"/>
+      <property name="itemInsets" value="2 14 2 12" type="insets"/> 
+      <property name="shortcutOffset" value="8" type="int"/>
+      <property name="separatorHeight" value="5" type="int"/>
+      <set colorid="background"/>
+      <fillrect x="0" y="0" w="WIDTH-2" h="HEIGHT-2"/>
+      <drawelem name="borderup" x="0" y="0" w="WIDTH" h="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="menuItemSeparator">
+    <style>
+      <set colorid="border3dmid"/>
+      <drawline x1="0" y1="2" x2="WIDTH-1" y2="2"/>
+      <drawline x1="0" y1="2" x2="0" y2="3"/>
+      <set colorid="border3dhigh"/>
+      <drawline x1="0" y1="3" x2="WIDTH-1" y2="3"/>
+      <drawline x1="WIDTH-1" y1="2" x2="WIDTH-1" y2="4"/>
+    </style>
+  </element>
+  
+  <element name="menuItemBackground">
+    <style>
+      <if state="SELECTED">
+        <set imageid="selectionbitmap"/>
+        <drawimage sx="0" sy="0" sw="1" sh="256" dx="0" dy="0" dw="WIDTH" dh="HEIGHT"/>    
+      </if>  
+    </style>
+  </element>
+  
+  <element name="menuItemCheck">
+    <style>
+      <set imageid="bitmap0"/>
+      <set drawmode="alphablend"/>    
+      <if state="SELECTED">
+        <drawimage sx="9" sy="172" sw="9" sh="10" dx="1" dy="5"/>
+      </if>
+      <if state="not SELECTED">
+        <drawimage sx="0" sy="172" sw="9" sh="10" dx="1" dy="5"/>
+      </if>                    
+      <set drawmode="replace"/>      
+    </style>
+  </element>
+  
+  <element name="menuItemText">
+    <style>
+      <set fontid="standard"/>
+      <if state="SELECTED"> 
+        <if state="ENABLED"> 
+          <set colorid="border3dhigh"/>
+          <printtext x="14" y="2" property="stringvalue" halign="left" valign="top"/>
+        </if>
+        <if state="DISABLED">
+          <set colorid="background"/>
+          <printtext x="14" y="2" property="stringvalue" halign="left" valign="top"/> 
+        </if>
+      </if>
+      <if state="not SELECTED">
+        <if state="ENABLED"> 
+          <set colorid="textcolor"/>
+          <printtext x="14" y="2" property="stringvalue" halign="left" valign="top"/>
+        </if>
+        <if state="DISABLED">
+          <set colorid="border3dhigh"/>
+          <printtext x="15" y="3" property="stringvalue" halign="left" valign="top"/>
+          <set colorid="border3dmid"/>
+          <printtext x="14" y="2" property="stringvalue" halign="left" valign="top"/>
+        </if>
+      </if>      
+    </style>  
+  </element>
+
+  <element name="menuItemShortcutText">
+    <style>
+      <set fontid="standard"/>
+      <if state="SELECTED"> 
+        <if state="ENABLED"> 
+          <set colorid="border3dhigh"/>
+          <printtext x="WIDTH-8" y="2" property="stringvalue" halign="right" valign="top"/>
+        </if>
+        <if state="DISABLED">
+          <set colorid="background"/>
+          <printtext x="WIDTH-8" y="2" property="stringvalue" halign="right" valign="top"/> 
+        </if>
+      </if>
+      <if state="not SELECTED">
+        <if state="ENABLED"> 
+          <set colorid="textcolor"/>
+          <printtext x="WIDTH-8" y="2" property="stringvalue" halign="right" valign="top"/>
+        </if>
+        <if state="DISABLED">
+          <set colorid="border3dhigh"/>
+          <printtext x="WIDTH-7" y="3" property="stringvalue" halign="right" valign="top"/>
+          <set colorid="border3dmid"/>
+          <printtext x="WIDTH-8" y="2" property="stringvalue" halign="right" valign="top"/>
+        </if>
+      </if>      
+    </style>  
+  </element>
+  
+  <element name="treeView">
+    <style>
+      <property name="buttonSize" value="16 16" type="size"/>
+      <property name="font" value="standard" type="fontid"/>
+      <property name="contentInsets" value="0 4 0 0" type="insets"/>
+      <property name="defaultForegroundColor" value="#000000FF" type="color"/>
+      <set color="#FFFFFFFF"/>
+      <fillrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="treeOpenButton">
+    <style>
+      <set imageid="bitmap0"/>
+      <drawimage sx="3" sy="190" sw="16" sh="16" dx="1" dy="0" />
+    </style>
+  </element>
+
+  <element name="treeCloseButton">
+    <style>
+      <set imageid="bitmap0"/>
+      <drawimage sx="20" sy="190" sw="16" sh="16" dx="1" dy="0" />
+    </style>
+  </element>
+
+  <element name="treeItemLine">
+    <style>
+      <set imageid="bitmap0"/>
+      <drawimage sx="37" sy="190" sw="16" sh="16" dx="1" dy="0" />
+    </style>
+  </element>
+
+  <element name="treeLine">
+    <style>
+      <set imageid="bitmap0"/>
+      <drawimage sx="54" sy="190" sw="16" sh="16" dx="1" dy="0" />
+    </style>
+  </element>
+
+  <element name="treeLastItemLine">
+    <style>
+      <set imageid="bitmap0"/>
+      <drawimage sx="71" sy="190" sw="16" sh="16" dx="1" dy="0" />
+    </style>
+  </element>
+
+  <element name="treeLastOpenButton">
+    <style>
+      <set imageid="bitmap0"/>
+      <drawimage sx="3" sy="206" sw="16" sh="16" dx="1" dy="0" />
+    </style>
+  </element>
+
+  <element name="treeLastCloseButton">
+    <style>
+      <set imageid="bitmap0"/>
+      <drawimage sx="20" sy="206" sw="16" sh="16" dx="1" dy="0" />
+    </style>
+  </element>
+
+  <element name="fileDialog">
+     <style>
+        <property name="iconFile" value="iconfile1" type="imageid"/>
+        <property name="iconFolder" value="iconfolder1" type="imageid"/>
+        <property name="selecticonFile" value="iconfile1" type="imageid"/>
+        <property name="selecticonFolder" value="iconfolder1" type="imageid"/>
+     </style>
+  </element>
+
+  <element name="comboboxView">
+    <style>
+      <property name="font" value="standard" type="fontid"/>
+      <property name="defaultSize" value="60 21" type="size"/>      
+      <property name="borderSize" value="2 2" type="size"/>
+      <property name="textOffsetX" value="2" type="int"/>
+      <property name="textOffsetY" value="1" type="int"/>
+      <if state="ENABLED">
+        <set color="#FFFFFFFF"/>
+        <fillrect x="2" y="2" w="WIDTH-4" h="HEIGHT-4"/>
+        <drawelem name="border" x="0" y="0" w="WIDTH" h="HEIGHT"/>
+      </if>
+
+      <if state="DISABLED">
+        <set colorid="background"/>
+        <fillrect x="1" y="1" w="WIDTH-2" h="HEIGHT-2"/>
+        <drawelem name="smallBorder" x="0" y="0" w="WIDTH" h="HEIGHT"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="comboboxKnob">
+    <style>
+      <set imageid="bitmap0"/>
+      <if state="ENABLED">
+        <if state="PRESSED">
+          <drawimage sx="34" sy="92" sw="16" sh="17" dx="WIDTH-18" dy="2" />
+        </if>
+        <if state="not PRESSED">
+          <drawimage sx="17" sy="92" sw="16" sh="17" dx="WIDTH-18" dy="2" />
+        </if>
+      </if>
+      <if state="DISABLED">
+        <drawimage sx="0" sy="92" sw="16" sh="17" dx="WIDTH-18" dy="2" />
+      </if>
+    </style>
+  </element>
+
+  <element name="comboboxBorderView">
+    <style>
+      <property name="childInsets" value="1 1 1 1" type="insets"/>
+      <set color="#000000FF"/>
+      <drawrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="progressView">
+    <style>
+      <property name="defaultSize" value="100 21" type="size"/>
+      <property name="barInsets" value="3 3 3 3" type="insets"/>      
+      <set colorid="background"/>
+      <fillrect x="1" y="1" w="WIDTH-2" h="HEIGHT-2"/>
+      <drawelem name="smallBorder" x="0" y="0" w="WIDTH" h="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="progressBar">
+    <style>
+      <set imageid="selectionbitmap"/>
+      <drawimage sx="0" sy="0" sw="1" sh="256" dx="0" dy="0" dw="WIDTH" dh="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="splitterView">
+    <style>
+      <property name="defaultSize" value="100 100" type="size"/>
+      <property name="splitterSize" value="5 5" type="size"/>
+    </style>
+  </element>
+
+  <element name="vertSplitter">
+    <style>
+      <set colorid="border3dhigh"/>
+      <drawline x1="0" y1="0" x2="0" y2="HEIGHT"/>
+      <set colorid="background"/>
+      <fillrect x="1" y="0" w="3" h="HEIGHT"/>
+      <set colorid="border3dmid"/>
+      <drawline x1="4" y1="0" x2="4" y2="HEIGHT"/>
+    </style>
+  </element>
+
+  <element name="horzSplitter">
+    <style>
+      <set colorid="border3dhigh"/>
+      <drawline x1="0" y1="0" x2="WIDTH" y2="0"/>
+      <set colorid="background"/>
+      <fillrect x="0" y="1" w="WIDTH" h="3"/>
+      <set colorid="border3dmid"/>
+      <drawline x1="0" y1="4" x2="WIDTH" y2="4"/>
+    </style>
+  </element>
+
+  <element name="splitterTopCenter">
+    <style>
+      <set colorid="background"/>
+      <fillrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+      <set colorid="border3dhigh"/>
+      <drawline x1="0" y1="0" x2="WIDTH" y2="0"/>      
+    </style>
+  </element>
+  
+  <element name="splitterBottomCenter">
+    <style>
+      <set colorid="background"/>
+      <fillrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+      <set colorid="border3dmid"/>
+      <drawline x1="0" y1="HEIGHT-1" x2="WIDTH" y2="HEIGHT-1"/>      
+    </style>
+  </element>
+  
+  <element name="splitterLeftCenter">
+    <style>
+      <set colorid="background"/>
+      <fillrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+      <set colorid="border3dhigh"/>
+      <drawline x1="0" y1="0" x2="0" y2="HEIGHT"/>      
+    </style>
+  </element>
+  
+  <element name="splitterRightCenter">
+    <style>
+      <set colorid="background"/>
+      <fillrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+      <set colorid="border3dmid"/>
+      <drawline x1="WIDTH-1" y1="0" x2="WIDTH-1" y2="HEIGHT"/>      
+    </style>
+  </element>
+
+  <element name="splitterQuadCenter">
+    <style>
+      <set colorid="background"/>
+      <fillrect x="0" y="0" w="WIDTH" h="HEIGHT"/>
+      <set colorid="border3dhigh"/>
+      <drawline x1="0" y1="0" x2="1" y2="1"/>       
+      <set colorid="border3dmid"/>
+      <drawline x1="WIDTH-1" y1="HEIGHT-1" x2="WIDTH" y2="HEIGHT"/>      
+    </style>
+  </element>  
+
+  <element name="toolButton">
+    <style>
+      <property name="defaultSize" value="80 22" type="size"/>
+      <property name="defaultForegroundColor" value="#000000FF" type="color"/>
+
+      <set fontid="button"/>
+
+      <if state="ENABLED">
+        <if state="SELECTED">
+          <drawelem name="smallBorder" x="0" y="0" w="WIDTH" h="HEIGHT"/>
+          <set color="#000000FF"/>
+          <printtext x="WIDTH/2+1" y="HEIGHT/2+1" property="title" halign="center" valign="middle"/>
+        </if>
+        <if state="not SELECTED">
+          <if state="MOUSE_OVER">
+            <drawelem name="smallborderup" x="0" y="0" w="WIDTH" h="HEIGHT"/>
+          </if>
+          <set color="#000000FF"/>
+          <printtext x="WIDTH/2" y="HEIGHT/2" property="title" halign="center" valign="middle"/>
+        </if>
+      </if>
+      <if state="DISABLED">
+        <set colorid="border3dhigh"/>
+        <printtext x="WIDTH/2+1" y="HEIGHT/2+1" property="title" halign="center" valign="middle"/>
+        <set colorid="border3dmid"/>
+        <printtext x="WIDTH/2" y="HEIGHT/2" property="title" halign="center" valign="middle"/>
+      </if>
+    </style>
+  </element>
+
+  <element name="keysettingView">
+    <style>
+      <property name="font" value="standard" type="fontid"/>
+    </style>
+  </element>
+  
+  <element name="menubarView">
+    <style>
+      <property name="defaultSize" value="80 24" type="size"/>
+      <property name="itemInsets" value="3 1 3 1" type="insets"/>
+    </style>
+  </element>  
+
+  <element name="menubarMenu">
+    <style>
+      <property name="itemInsets" value="0 8 0 8" type="insets"/>
+      <property name="font" value="standard" type="fontid"/>
+
+      <set color="#000000FF"/>
+      <set fontid="standard"/>
+      <if state="PRESSED">
+        <printtext x="9" y="HEIGHT/2+1" property="title" halign="left" valign="middle"/>
+        <drawelem name="smallBorder" x="0" y="0" w="WIDTH" h="HEIGHT"/>
+      </if>
+      <if state="not PRESSED">
+        <printtext x="8" y="HEIGHT/2" property="title" halign="left" valign="middle"/>
+        <if state="MOUSE_OVER">
+          <drawelem name="smallborderup" x="0" y="0" w="WIDTH" h="HEIGHT"/>
+        </if>        
+      </if>
+    </style>
+  </element> 
+    
+</skin>
