@@ -14,7 +14,9 @@ errors and so won't the devs!!!
 
 HOW TO INSTALL:
 
-Step 1 (applying the theme): unzip the .rar file, put the "skin" folder into the \steam games\steamapps\common\NoLimits 2\data 
+Download: click  "clone or download" and selected "Download ZIP"
+
+Step 1 (applying the theme): move the "skin" folder from the rar file into the \steam games\steamapps\common\NoLimits 2\data 
 		               directory, launch the game.
 
 Step 2 (changing the background): in the NoLimits 2 editor go to file -> preferences, in the "common" tab select
