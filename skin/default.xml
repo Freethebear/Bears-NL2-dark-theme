@@ -1680,8 +1680,8 @@
       <property name="buttonSize" value="16 16" type="size"/>
       <property name="font" value="standard" type="fontid"/>
       <property name="contentInsets" value="0 4 0 0" type="insets"/>
-      <property name="defaultForegroundColor" value="#000000FF" type="color"/>
-      <set color="#000000"/>
+      <property name="defaultForegroundColor" value="#b0bec4" type="color"/>
+      <set color="#39424c"/>
       <fillrect x1="0" y1="0" x2="WIDTH" y2="HEIGHT"/>
     </style>
   </element>
@@ -1973,7 +1973,7 @@
       <set colorproperty="foregroundColor"/>
 
       <if state="ENABLED">
-        <set color="#b0bec4"/> <!-- custom text color for disabled -->
+        <set color="#b0bec4"/> <!-- custom text color for enabled -->
         <printtext x="25LS" y="HEIGHT/2" property="title" halign="left" valign="middle"/>
 
         <if state="SELECTED">
